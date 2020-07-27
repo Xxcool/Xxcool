@@ -1,4 +1,4 @@
-# 🥳 𝗛𝗲𝗹𝗹𝗼! 𝗜'𝗺 Xxcool
+# 𝗛𝗲𝗹𝗹𝗼! 𝗜'𝗺 Xxcool
 [![](https://img.shields.io/badge/-@Xxcool-%23181717?style=flat-square&logo=github)](https://github.com/Xxcool)
 ![web](https://img.shields.io/badge/-web-%232c3e50?style=flat-square&logo=WEB)
 
