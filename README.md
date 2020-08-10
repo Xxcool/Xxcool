@@ -11,7 +11,6 @@
 
 ##
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Xxcool&layout=compact&theme=prussian)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Xxcool&theme=prussian)
 
 ## Contact
 
