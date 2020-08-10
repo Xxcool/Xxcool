@@ -8,6 +8,8 @@
 ## Status
 
 ![Xxcool's github stats](https://github-readme-stats.vercel.app/api?username=Xxcool&show_icons=true&theme=algolia)
+
+##
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Xxcool&layout=compact&theme=algolia)
 
 ## Contact
