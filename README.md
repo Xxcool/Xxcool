@@ -1,6 +1,6 @@
 # 𝗛𝗲𝗹𝗹𝗼! 𝗜'𝗺 Xxcool
 [![](https://img.shields.io/badge/-@Xxcool-%23181717?style=flat-square&logo=github)](https://github.com/Xxcool)
-![web](https://img.shields.io/badge/-WEB-%232c3e50?style=flat-square&logo=WEB)
+![web](https://img.shields.io/badge/-WEB-?style=flat-square&logo=WEB)
 
 - 前端开发者一枚。
 - 喜欢分享一些平时开发时入坑的解决办法和个人见解🧐
