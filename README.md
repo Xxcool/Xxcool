@@ -7,12 +7,12 @@
 
 ## Status
 
-![Xxcool's github stats](https://github-readme-stats.vercel.app/api?username=Xxcool&show_icons=true&theme=prussian)
+![Xxcool's github stats](https://github-readme-stats.vercel.app/api?username=Xxcool&show_icons=true&theme=algolia)
 
 ##
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Xxcool&layout=compact&theme=prussian)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Xxcool&layout=compact&theme=algolia)
 
 ## Contact
 
-	QQ: 1015937605
-	E-mail: 101593705@qq.com
+QQ: 1015937605
+E-mail: 101593705@qq.com
