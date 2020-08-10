@@ -11,6 +11,7 @@
 
 ##
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Xxcool&layout=compact&theme=algolia)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Xxcool&theme=algolia&hide=javascript,html)]
 
 ## Contact
 
