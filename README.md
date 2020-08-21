@@ -16,6 +16,15 @@
 ##
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Xxcool&layout=compact&theme=algolia)
 
+### 🎉 My Open Source Project
+<a href="https://github.com/Xxcool/hover-menu">
+  <img align="left" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=Xxcool&repo=hover-menu&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
+</a>
+
+<a href="https://github.com/Xxcool/templet">
+  <img align="left" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=Xxcool&repo=templet&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
+</a>
+
 ## Contact
 
     QQ: 1015937605
