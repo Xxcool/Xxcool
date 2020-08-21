@@ -5,6 +5,10 @@
 - 前端开发者一枚。
 - 喜欢分享一些平时开发时入坑的解决办法和个人见解🧐
 
+|  掘金  | 博客 |
+|  ----  | ----  |
+|  [点我直达](https://juejin.im/user/4265760845468296)|[点我直达](https://www.xxcool.top)|
+
 ## Status
 
 ![Xxcool's github stats](https://github-readme-stats.vercel.app/api?username=Xxcool&show_icons=true&theme=algolia)
