@@ -5,9 +5,9 @@
 - 前端开发者一枚。
 - 喜欢分享一些平时开发时入坑的解决办法和个人见解🧐
 
-|  掘金  | 博客 |
-|  ----  | ----  |
-|  [点我直达](https://juejin.im/user/4265760845468296)|[点我直达](https://www.xxcool.top)|
+| 掘金 | 博客 |
+| ---- | ---- |
+| [点我直达](https://juejin.im/user/4265760845468296)|[点我直达](https://www.xxcool.top)|
 
 ### 🌈 My Github State
 
@@ -21,7 +21,7 @@
   <img align="left" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=Xxcool&repo=hover-menu&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
 </a>
 
-<a href="https://github.com/Xxcool/templet">
-  <img align="left" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=Xxcool&repo=templet&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
+<a href="https://github.com/Xxcool/mall-templet">
+  <img align="left" src="https://github-readme-stats.anuraghazra1.vercel.app/api/pin/?username=Xxcool&repo=mall-templet&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
 </a>
     
