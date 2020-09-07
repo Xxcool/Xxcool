@@ -7,7 +7,7 @@
 
 | 掘金 | 博客 |
 | ---- | ---- |
-| ![][点我直达](https://juejin.im/user/4265760845468296)| ![][点我直达](https://www.xxcool.top)|
+| [点我直达](https://juejin.im/user/4265760845468296)|[点我直达](https://www.xxcool.top)|
 
 ### 🌈 My Github State
 
