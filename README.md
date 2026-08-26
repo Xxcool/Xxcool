@@ -43,18 +43,6 @@ From polished interfaces to reliable services — I enjoy building the whole pro
   </tr>
 </table>
 
-## Domain Experience
-
-```mermaid
-flowchart LR
-    A["SaaS 产品"] --> B["跨境电商供应链"] --> C["生鲜供应链"]
-    A --- D["产品化与平台能力"]
-    B --- E["商品 · 采购 · 库存 · 履约"]
-    C --- F["时效 · 批次 · 损耗 · 协同"]
-```
-
-复杂业务是我技术实践的重要背景：从多角色协作和产品化能力，到商品、采购、库存与履约链路，再到生鲜场景下对时效、批次和协同的更高要求。我喜欢把这些真实约束转化为清晰、可靠的系统体验。
-
 ## Tech Landscape
 
 | Area | Stack |
@@ -65,36 +53,24 @@ flowchart LR
 | **Data** | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) |
 | **Workflow** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![AI Assisted](https://img.shields.io/badge/AI--assisted-Development-7C3AED?style=flat-square&logo=openai&logoColor=white) ![Vibe Coding](https://img.shields.io/badge/Vibe-Coding-0891B2?style=flat-square&logo=sparkles&logoColor=white) |
 
-## Open-source Playground
+## Featured Projects
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Xxcool/react-music">react-music</a></h3>
-      <p>使用 React 构建的网易云音乐 Web 应用实践。</p>
-      <code>React</code> <code>JavaScript</code>
+      <h3>🌱 <a href="https://github.com/Xxcool/app-harbor-web">芽分发</a></h3>
+      <p>面向安卓内部测试包的版本分发平台，支持浏览器解析 APK、应用自动归档、版本管理、下载统计与客户端更新检查。</p>
+      <p><a href="https://sprout-release.pages.dev">在线体验 ↗</a></p>
+      <code>Vue 3</code> <code>TypeScript</code> <code>Cloudflare Workers</code> <code>D1</code>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/Xxcool/vue3-vite-ts">vue3-vite-ts</a></h3>
-      <p>基于 Vue 3、Vite 与 TypeScript 的后台应用实践。</p>
-      <code>Vue 3</code> <code>Vite</code> <code>TypeScript</code>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Xxcool/vue-sure-admin">vue-sure-admin</a></h3>
-      <p>面向业务管理场景的 Vue Admin 项目。</p>
-      <code>Vue</code> <code>Admin</code>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Xxcool/Xxcool.github.io">Xxcool.github.io</a></h3>
-      <p>使用 Hexo 与 GitHub Pages 搭建的个人技术博客。</p>
-      <code>Hexo</code> <code>GitHub Pages</code>
+      <h3>🧰 <a href="https://github.com/Xxcool/pizhihui-toolkit">皮智慧工具站</a></h3>
+      <p>隐私优先的在线工具集合，包含 50+ 实用小工具；数据在浏览器本地处理，并提供响应式 RetroUI 与深浅色主题。</p>
+      <p><a href="https://pizhihui-toolkit.vercel.app">在线体验 ↗</a></p>
+      <code>Next.js</code> <code>TypeScript</code> <code>Tailwind CSS</code> <code>RetroUI</code>
     </td>
   </tr>
 </table>
-
-> 公开仓库记录了我的部分探索；更多实践来自持续演进的真实业务与产品交付。
 
 ## GitHub Activity
 
