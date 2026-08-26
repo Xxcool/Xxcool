@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- GitHub 个人主页顶部横幅：使用仓库内静态 SVG，避免依赖第三方生成服务。 -->
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Xxcool — Frontend-leaning Full-stack Engineer</title>
+  <desc id="desc">A dark cyan and violet banner introducing Xxcool as a frontend-leaning full-stack engineer.</desc>
+  <defs>
+    <linearGradient id="background" x1="72" y1="18" x2="1105" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.52" stop-color="#0B1728"/>
+      <stop offset="1" stop-color="#11102B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="140" y1="92" x2="945" y2="298" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.48" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="0" cy="0" r="1" gradientTransform="translate(1015 45) rotate(131) scale(360 310)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPurple" cx="0" cy="0" r="1" gradientTransform="translate(920 360) rotate(-90) scale(280 420)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#94A3B8" stroke-opacity="0.07"/>
+    </pattern>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="26" fill="url(#background)"/>
+  <rect width="1200" height="360" rx="26" fill="url(#glowCyan)"/>
+  <rect width="1200" height="360" rx="26" fill="url(#glowPurple)"/>
+  <rect width="1200" height="360" rx="26" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="25" stroke="url(#accent)" stroke-opacity="0.38" stroke-width="2"/>
+
+  <g opacity="0.9">
+    <circle cx="1070" cy="113" r="84" stroke="url(#accent)" stroke-opacity="0.3"/>
+    <circle cx="1070" cy="113" r="55" stroke="url(#accent)" stroke-opacity="0.42"/>
+    <circle cx="1070" cy="113" r="7" fill="#22D3EE" filter="url(#softGlow)"/>
+    <path d="M986 113H1154M1070 29V197" stroke="url(#accent)" stroke-opacity="0.22"/>
+    <path d="M1011 54L1129 172M1129 54L1011 172" stroke="url(#accent)" stroke-opacity="0.16"/>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="92" y="106" fill="#94A3B8" font-size="19" font-weight="600" letter-spacing="4">HELLO, I'M</text>
+    <text x="88" y="189" fill="url(#accent)" font-size="82" font-weight="760" letter-spacing="-3">Xxcool</text>
+    <text x="94" y="238" fill="#E2E8F0" font-size="26" font-weight="520">Frontend-leaning Full-stack Engineer</text>
+    <text x="94" y="284" fill="#94A3B8" font-size="18" letter-spacing="0.5">WEB  ·  MOBILE  ·  NODE.JS  ·  AI-ASSISTED DEVELOPMENT</text>
+  </g>
+
+  <g transform="translate(984 254)">
+    <rect width="172" height="46" rx="23" fill="#0F2437" stroke="#22D3EE" stroke-opacity="0.42"/>
+    <circle cx="24" cy="23" r="5" fill="#34D399" filter="url(#softGlow)"/>
+    <text x="42" y="29" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600">BUILDING</text>
+  </g>
+</svg>
