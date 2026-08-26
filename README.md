@@ -76,12 +76,19 @@ From polished interfaces to reliable services — I enjoy building the whole pro
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Xxcool&show_icons=true&hide_border=true&bg_color=00000000&title_color=22d3ee&icon_color=22d3ee&text_color=cbd5e1" />
-    <img height="165" src="https://github-readme-stats.vercel.app/api?username=Xxcool&show_icons=true&hide_border=true&bg_color=00000000&title_color=0891b2&icon_color=0891b2&text_color=475569" alt="Xxcool's GitHub stats" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Xxcool&theme=github_dark" />
+    <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Xxcool&theme=github" alt="Xxcool's GitHub profile details" />
+  </picture>
+</div>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Xxcool&theme=github_dark" />
+    <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Xxcool&theme=github" alt="Xxcool's repositories per language" />
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Xxcool&layout=compact&hide_border=true&bg_color=00000000&title_color=22d3ee&text_color=cbd5e1" />
-    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Xxcool&layout=compact&hide_border=true&bg_color=00000000&title_color=0891b2&text_color=475569" alt="Xxcool's most used public languages" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Xxcool&theme=github_dark&utcOffset=8" />
+    <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Xxcool&theme=github&utcOffset=8" alt="Xxcool's productive time" />
   </picture>
 </div>
 
