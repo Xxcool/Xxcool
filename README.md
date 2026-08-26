@@ -72,26 +72,6 @@ From polished interfaces to reliable services — I enjoy building the whole pro
   </tr>
 </table>
 
-## GitHub Activity
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Xxcool&theme=github_dark" />
-    <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Xxcool&theme=github" alt="Xxcool's GitHub profile details" />
-  </picture>
-</div>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Xxcool&theme=github_dark" />
-    <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Xxcool&theme=github" alt="Xxcool's repositories per language" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Xxcool&theme=github_dark&utcOffset=8" />
-    <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Xxcool&theme=github&utcOffset=8" alt="Xxcool's productive time" />
-  </picture>
-</div>
-
 ## Currently Exploring
 
 - 用 AI 提升从需求理解到验证交付的完整研发效率
