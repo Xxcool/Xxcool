@@ -70,6 +70,14 @@ From polished interfaces to reliable services — I enjoy building the whole pro
       <code>Next.js</code> <code>TypeScript</code> <code>Tailwind CSS</code> <code>RetroUI</code>
     </td>
   </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <h3>🚢 <a href="https://github.com/Xxcool/juejin-csdn-extension">文章摆渡</a></h3>
+      <p>将掘金新文章和本人历史文章同步保存到 CSDN 草稿箱的 Chrome 扩展，支持 Markdown 清洗、GFM 代码块、图片转存、登录续接和失败重试。</p>
+      <p><a href="https://github.com/Xxcool/juejin-csdn-extension/releases">下载安装 ↗</a></p>
+      <code>Chrome Extension</code> <code>Manifest V3</code> <code>TypeScript</code> <code>esbuild</code>
+    </td>
+  </tr>
 </table>
 
 ## Currently Exploring
