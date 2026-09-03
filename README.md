@@ -4,7 +4,7 @@
 
 - 💻 在 Web、移动端与服务端之间持续构建完整产品
 - 📦 做过 SaaS 与跨境电商供应链，目前专注生鲜供应链
-- 🤖 日常使用 AI 辅助分析、编码与验证，探索可靠的 Vibe Coding 工作流
+- 🤖 日常使用 Codex 与 Claude 辅助分析、编码和验证
 
 ## 🛠️ Tech Stack
 
@@ -20,10 +20,10 @@
 
 [![CI/CD](https://skillicons.dev/icons?i=git,jenkins,docker)](https://skillicons.dev)
 
-**AI Workflow**
+**AI Tools**
 
-![AI-assisted Development](https://img.shields.io/badge/AI--assisted-Development-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Vibe Coding](https://img.shields.io/badge/Vibe-Coding-0891B2?style=for-the-badge)
+![Codex](https://img.shields.io/badge/Codex-000000?style=for-the-badge&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
 
 ## 🚀 Projects
 
