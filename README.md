@@ -8,10 +8,9 @@
 
 ## 🛠️ Tech Stack
 
-**Frontend & Mobile**
+**Frontend**
 
 [![Frontend](https://skillicons.dev/icons?i=vue,react,nextjs,ts,js,vite)](https://skillicons.dev)
-<img src="https://web-assets.dcloud.net.cn/unidoc/zh/uni-app.png" height="44" alt="uni-app" title="uni-app" />
 
 **Backend & Data**
 
