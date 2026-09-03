@@ -10,15 +10,22 @@
 
 **Frontend & Mobile**
 
-`Vue` · `React` · `Next.js` · `TypeScript` · `JavaScript` · `uni-app` · `Tailwind CSS`
+[![Frontend](https://skillicons.dev/icons?i=vue,react,nextjs,ts,js,vite,tailwind)](https://skillicons.dev)
+<img src="https://web-assets.dcloud.net.cn/unidoc/zh/uni-app.png" height="44" alt="uni-app" title="uni-app" />
 
 **Backend & Data**
 
-`Node.js` · `MySQL` · `Redis` · `Cloudflare Workers` · `D1`
+[![Backend and Data](https://skillicons.dev/icons?i=nodejs,mysql,redis)](https://skillicons.dev)
+![Cloudflare Workers and D1](https://img.shields.io/badge/Workers_&_D1-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
 
-**Workflow**
+**CI/CD & Deployment**
 
-`Git` · `AI-assisted Development` · `Vibe Coding`
+[![CI/CD](https://skillicons.dev/icons?i=git,githubactions,jenkins,vercel)](https://skillicons.dev)
+
+**AI Workflow**
+
+![AI-assisted Development](https://img.shields.io/badge/AI--assisted-Development-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Vibe Coding](https://img.shields.io/badge/Vibe-Coding-0891B2?style=for-the-badge)
 
 ## 🚀 Projects
 
