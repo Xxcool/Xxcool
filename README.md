@@ -5,7 +5,7 @@
 - 💻 在 Web、移动端与服务端之间持续构建完整产品
 - 📦 做过 SaaS 与跨境电商供应链，目前专注生鲜供应链
 - 🤖 日常使用 Codex 与 Claude 辅助分析、编码和验证
-- 🌱 热衷开源，参与 [juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage) 的社区共建
+- 🌱 热衷开源：参与 [juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage) 社区共建，也持续开源自己的工具与产品，例如 [juejin-csdn-extension](https://github.com/Xxcool/juejin-csdn-extension)
 
 [![Contributor: juejin-usage](https://img.shields.io/badge/Contributor-juejin--usage-1E80FF?style=flat-square&logo=github&logoColor=white)](https://github.com/juejin-cn/juejin-usage)
 
