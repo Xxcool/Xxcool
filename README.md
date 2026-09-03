@@ -10,17 +10,16 @@
 
 **Frontend & Mobile**
 
-[![Frontend](https://skillicons.dev/icons?i=vue,react,nextjs,ts,js,vite,tailwind)](https://skillicons.dev)
+[![Frontend](https://skillicons.dev/icons?i=vue,react,nextjs,ts,js,vite)](https://skillicons.dev)
 <img src="https://web-assets.dcloud.net.cn/unidoc/zh/uni-app.png" height="44" alt="uni-app" title="uni-app" />
 
 **Backend & Data**
 
 [![Backend and Data](https://skillicons.dev/icons?i=nodejs,mysql,redis)](https://skillicons.dev)
-![Cloudflare Workers and D1](https://img.shields.io/badge/Workers_&_D1-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
 
-**CI/CD & Deployment**
+**CI/CD & Tools**
 
-[![CI/CD](https://skillicons.dev/icons?i=git,githubactions,jenkins,vercel)](https://skillicons.dev)
+[![CI/CD](https://skillicons.dev/icons?i=git,jenkins,docker)](https://skillicons.dev)
 
 **AI Workflow**
 
