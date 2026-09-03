@@ -6,6 +6,8 @@
 - 📦 做过 SaaS 与跨境电商供应链，目前专注生鲜供应链
 - 🤖 日常使用 Codex 与 Claude 辅助分析、编码和验证
 
+[![Contributor: juejin-usage](https://img.shields.io/badge/Contributor-juejin--usage-1E80FF?style=flat-square&logo=github&logoColor=white)](https://github.com/juejin-cn/juejin-usage)
+
 ## 🛠️ Tech Stack
 
 **Frontend**
