@@ -16,7 +16,7 @@
 - 📦 **业务深耕**：主导过 SaaS 平台与跨境电商供应链，目前深耕生鲜供应链复杂中后台体系；
 - 🤖 **AI-Native**：重度使用 Claude 与各类大模型辅助业务架构、代码重构与自动化验证；
 - 🌱 **开源生态**：
-  - 独立开源 Chrome 扩展 **[文章摆渡 (Article Ferry)](https://github.com/Xxcool/juejin-csdn-extension)**（v0.6.0 旗舰版，41 项单测全绿，零 Cookie 端侧安全）；
+  - 独立开源 Chrome 扩展 **[文章摆渡 (Article Ferry)](https://github.com/Xxcool/juejin-csdn-extension)**；
   - 深度参与 [juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage) 社区共建，持续孵化“零妥协、端侧安全”的极客工具。
 
 ---
