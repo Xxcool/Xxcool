@@ -35,8 +35,8 @@
   <tr>
     <td width="33%" valign="top">
       <h4>⛵ <a href="https://github.com/Xxcool/juejin-csdn-extension">文章摆渡 (Article Ferry)</a></h4>
-      <p><b>【原创开源】面向技术博主的端侧安全内容中枢</b></p>
-      <p>Chrome MV3 扩展，将掘金文章优雅摆渡至 CSDN 草稿箱。支持 Dry-run 预演、无水印图床转存、专栏动态拉取与零 Cookie 隐私保障。</p>
+      <p><b>面向技术博主的端侧安全内容中枢</b></p>
+      <p>将掘金文章优雅摆渡至 CSDN 和微信公众号平台。支持 无水印图床转存、专栏动态拉取与零 Cookie 隐私保障。</p>
       <p>
         <img src="https://img.shields.io/github/v/release/Xxcool/juejin-csdn-extension?style=flat-square&color=blue&label=Release" />
         <img src="https://img.shields.io/badge/Tests-41%2F41-brightgreen?style=flat-square" />
