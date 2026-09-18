@@ -16,7 +16,7 @@
 - 📦 **业务深耕**：主导过 SaaS 平台与跨境电商供应链，目前深耕生鲜供应链复杂中后台体系；
 - 🤖 **AI-Native**：重度使用 Claude 与各类大模型辅助业务架构、代码重构与自动化验证；
 - 🌱 **开源生态**：
-  - 独立开源 Chrome 扩展 **[文章摆渡 (Article Ferry)](https://github.com/Xxcool/juejin-csdn-extension)**；
+  - 独立开源 Chrome 扩展 **[文章摆渡 (Article Ferry)](https://github.com/Xxcool/juejin-csdn-extension)**（持续迭代演进，41 项单测全绿，零 Cookie 端侧安全）；
   - 深度参与 [juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage) 社区共建，持续孵化“零妥协、端侧安全”的极客工具。
 
 ---
@@ -38,7 +38,7 @@
       <p><b>【原创开源】面向技术博主的端侧安全内容中枢</b></p>
       <p>Chrome MV3 扩展，将掘金文章优雅摆渡至 CSDN 草稿箱。支持 Dry-run 预演、无水印图床转存、专栏动态拉取与零 Cookie 隐私保障。</p>
       <p>
-        <img src="https://img.shields.io/badge/Release-v0.6.0-blue?style=flat-square" />
+        <img src="https://img.shields.io/github/v/release/Xxcool/juejin-csdn-extension?style=flat-square&color=blue&label=Release" />
         <img src="https://img.shields.io/badge/Tests-41%2F41-brightgreen?style=flat-square" />
       </p>
       <a href="https://github.com/Xxcool/juejin-csdn-extension/releases">下载安装 ↗</a>
