@@ -39,7 +39,6 @@
       <p>将掘金文章优雅摆渡至 CSDN 和微信公众号平台。支持 无水印图床转存、专栏动态拉取与零 Cookie 隐私保障。</p>
       <p>
         <img src="https://img.shields.io/github/v/release/Xxcool/juejin-csdn-extension?style=flat-square&color=blue&label=Release" />
-        <img src="https://img.shields.io/badge/Tests-41%2F41-brightgreen?style=flat-square" />
       </p>
       <a href="https://github.com/Xxcool/juejin-csdn-extension/releases">下载安装 ↗</a>
     </td>
