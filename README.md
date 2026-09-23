@@ -2,7 +2,7 @@
   <h1>Hi, I'm Xxcool 👋</h1>
   <p><b>偏前端的全栈开发者 · 喜欢把复杂业务做成清晰、可靠、好用的产品</b></p>
   <p>
-    <a href="https://juejin.cn/user/4265760845468296/pins" target="_blank"><img src="https://img.shields.io/badge/掘金-技术创作者-1E80FF?style=flat-square&logo=juejin&logoColor=white" alt="掘金" /></a>
+    <a href="https://juejin.cn/user/4265760845468296/posts" target="_blank"><img src="https://img.shields.io/badge/掘金-技术创作者-1E80FF?style=flat-square&logo=juejin&logoColor=white" alt="掘金" /></a>
     <a href="https://github.com/Xxcool/smart-warehouse" target="_blank"><img src="https://img.shields.io/badge/3D数字孪生-智慧仓储-42B883?style=flat-square&logo=threedotjs&logoColor=white" alt="智慧仓储" /></a>
     <a href="https://github.com/Xxcool/juejin-csdn-extension" target="_blank"><img src="https://img.shields.io/badge/Chrome扩展-文章摆渡-10B981?style=flat-square&logo=googlechrome&logoColor=white" alt="文章摆渡" /></a>
     <a href="https://github.com/juejin-cn/juejin-usage" target="_blank"><img src="https://img.shields.io/badge/Contributor-juejin--usage-007ACC?style=flat-square&logo=github&logoColor=white" alt="Contributor" /></a>
@@ -95,5 +95,5 @@
 <div align="center">
   <a href="https://github.com/Xxcool"><img src="https://img.shields.io/badge/GitHub-Xxcool-181717?style=flat-square&logo=github&logoColor=white" /></a>
   &nbsp;
-  <a href="https://juejin.cn/user/4265760845468296/pins"><img src="https://img.shields.io/badge/掘金-Xxcool-1E80FF?style=flat-square&logo=juejin&logoColor=white" /></a>
+  <a href="https://juejin.cn/user/4265760845468296/posts"><img src="https://img.shields.io/badge/掘金-Xxcool-1E80FF?style=flat-square&logo=juejin&logoColor=white" /></a>
 </div>
