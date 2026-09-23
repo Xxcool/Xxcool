@@ -4,7 +4,7 @@
   <p>
     <a href="https://juejin.cn/user/4265760845468296/pins" target="_blank"><img src="https://img.shields.io/badge/掘金-技术创作者-1E80FF?style=flat-square&logo=juejin&logoColor=white" alt="掘金" /></a>
     <a href="https://github.com/Xxcool/smart-warehouse" target="_blank"><img src="https://img.shields.io/badge/3D数字孪生-智慧仓储-42B883?style=flat-square&logo=threedotjs&logoColor=white" alt="智慧仓储" /></a>
-    <a href="https://github.com/Xxcool/juejin-csdn-extension" target="_blank"><img src="https://img.shields.io/badge/原创开源-文章摆渡-10B981?style=flat-square&logo=googlechrome&logoColor=white" alt="文章摆渡" /></a>
+    <a href="https://github.com/Xxcool/juejin-csdn-extension" target="_blank"><img src="https://img.shields.io/badge/Chrome扩展-文章摆渡-10B981?style=flat-square&logo=googlechrome&logoColor=white" alt="文章摆渡" /></a>
     <a href="https://github.com/juejin-cn/juejin-usage" target="_blank"><img src="https://img.shields.io/badge/Contributor-juejin--usage-007ACC?style=flat-square&logo=github&logoColor=white" alt="Contributor" /></a>
   </p>
 </div>
@@ -15,10 +15,10 @@
 
 - 💻 **全栈交付**：在 Web、移动端与 Node.js 服务端之间持续构建完整闭环产品；
 - 📦 **业务深耕**：主导过 SaaS 平台与跨境电商供应链，目前深耕生鲜供应链复杂中后台体系；
-- 🤖 **Vibe Coding**：重度使用 CodeX Claude 与各类大模型辅助业务架构、代码重构与自动化验证；
-- 🌱 **开源生态**：
-  - 独立开源 3D 数字孪生 **[智慧仓储数字孪生平台 (smart-warehouse)](https://github.com/Xxcool/smart-warehouse)**：基于 Vue 3 + Three.js + Blender 5.2.2 高精建模的现代化智慧物流与冷链大屏系统，支持 AGV 自主调度与 WebGL 实时微环境监控；
-  - 独立开源 Chrome 扩展 **[文章摆渡 (Article Ferry)](https://github.com/Xxcool/juejin-csdn-extension)**：掘金文章同步助手，一键同步至 CSDN、微信公众号草稿箱，排版保真，大幅提升创作者分发效率；
+- 🤖 **Vibe Coding 实战**：深度践行 AI-native 研发工作流，重度借助大模型辅助架构设计、代码工程与端到端验证，完成从工业级 3D 孪生大屏到端侧工具的高效交付；
+- 🌱 **开源与社区**：
+  - **[智慧仓储数字孪生平台 (smart-warehouse)](https://github.com/Xxcool/smart-warehouse)**：Vibe Coding 打造的工业级 3D 智慧物流与冷链管控大屏系统（Vue 3 + Three.js + Blender）；
+  - **[文章摆渡 (Article Ferry)](https://github.com/Xxcool/juejin-csdn-extension)**：掘金文章同步助手 Chrome 扩展，一键同步至 CSDN、微信公众号草稿箱，排版保真，提升创作者分发效率；
   - 持续参与 **[juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage)** 社区共建，项目活跃贡献者（Active Contributor），参与多项功能迭代与生态共建。
 
 ---
@@ -31,14 +31,14 @@
 
 ---
 
-### 🚀 精选开源与独立作品 (Featured Projects)
+### 🚀 精选作品 (Featured Projects)
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <h4>🏭 <a href="https://github.com/Xxcool/smart-warehouse">智慧仓储数字孪生 (smart-warehouse)</a></h4>
       <p><b>工业级 3D 智慧物流与冷链孪生管控大屏</b></p>
-      <p>基于 Vue 3 + Three.js 与 Blender 高精建模。支持 AGV 自主巡线调度、自动化伸缩滚筒线、冷链微环境感知与 WebGL HUD 联动交互。</p>
+      <p>基于 Vue 3 + Three.js 与 Blender 高精建模，通过 Vibe Coding 敏捷落地。支持 AGV 自主巡线调度、自动化伸缩滚筒线、冷链微环境感知与 WebGL HUD 联动交互。</p>
       <p>
         <img src="https://img.shields.io/badge/Stack-Vue3%20%7C%20Three.js-42b883?style=flat-square" />
         <img src="https://img.shields.io/badge/Deploy-Vercel-black?style=flat-square" />
