@@ -77,7 +77,7 @@
 ### 👨‍💻 About Me
 
 - 💻 **Full-Stack Delivery**: Delivering complete end-to-end products across Web, Mobile, and Node.js backend architectures;
-- 📦 **Domain Expertise**: Led SaaS platform and cross-border e-commerce supply chain engineering; currently diving deep into complex enterprise admin systems for fresh food cold-chain logistics;
+- 📦 **End-to-End AI Digital Supply Chain**: Architecting comprehensive intelligent supply chain ecosystems — bridging **procurement, supplier portals, operations central dispatch, and e-commerce mini-programs**, seamlessly integrated with **industrial factory sorting hardware and warehouse handheld PDA terminals**; seasoned in **cross-border logistics & freight supply chain** architectures;
 - 🤖 **Vibe Coding & AI-Native**: Embracing AI-native development workflows — leveraging LLMs across architectural design, rapid prototyping, and automated verification to deliver projects efficiently;
 - 🌱 **Open Source & Community**:
   - Active contributor to the **[juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage)** community ecosystem, participating in core feature iterations and community co-building;
