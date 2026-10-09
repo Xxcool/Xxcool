@@ -5,8 +5,8 @@
 
   <h1>Hi, I'm Xxcool 👋</h1>
   <p>
-    <b>Frontend-leaning Full-Stack Developer · Digital Twin & 3D WebGL Enthusiast</b><br>
-    <i>Turning complex industrial & business workflows into elegant, reliable & robust products.</i>
+    <b>Frontend-leaning Full-Stack Developer · Turning complex business domains into clean, reliable & robust products</b><br>
+    <i>Driven by curiosity — exploring new tech, building open-source tools & writing tech blogs.</i>
   </p>
 
   <p>
@@ -74,29 +74,29 @@
 
 ---
 
-### 👨‍💻 About Me & Engineering Philosophy
+### 👨‍💻 About Me
 
-- 💻 **Full-Stack Delivery**: Delivering complete end-to-end products across Web, Mobile, and Node.js backend architectures.
-- 📦 **Domain Expertise**: Led SaaS platform and cross-border e-commerce supply chain engineering; currently diving deep into complex enterprise admin systems for fresh food cold-chain logistics.
-- 🤖 **Vibe Coding & AI-Native**: Deeply embracing AI-native engineering workflows — heavily leveraging LLMs across architectural design, rapid prototyping, and automated verification to deliver everything from industrial 3D digital twins to client-side productivity utilities.
-- 🌱 **Community Collaboration**: Active contributor to the **[juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage)** open-source ecosystem.
+- 💻 **Full-Stack Delivery**: Delivering complete end-to-end products across Web, Mobile, and Node.js backend architectures;
+- 📦 **Domain Expertise**: Led SaaS platform and cross-border e-commerce supply chain engineering; currently diving deep into complex enterprise admin systems for fresh food cold-chain logistics;
+- 🤖 **Vibe Coding & AI-Native**: Embracing AI-native development workflows — leveraging LLMs across architectural design, rapid prototyping, and automated verification to deliver projects efficiently;
+- 🧭 **Curiosity & Sharing**: Driven by curiosity to explore diverse technologies and build fun side projects; active in open-source collaboration and tech blogging to share practical learnings with the community.
 
 ---
 
 ### 🛠️ Tech Stack & Capabilities
 
 <details open>
-  <summary><b>🎨 3D & Creative Engineering (Core Speciality)</b></summary>
-  <br>
-  <img src="https://skillicons.dev/icons?i=threejs,blender,ts" alt="3D Stack" />
-  <p><i>WebGL rendering pipelines, Three.js shaders, Blender PBR modeling, GLTF optimization, Spatial UX.</i></p>
-</details>
-
-<details open>
-  <summary><b>💻 Modern Full-Stack & Web Engineering</b></summary>
+  <summary><b>💻 Modern Full-Stack & Web Engineering (Core Stack)</b></summary>
   <br>
   <img src="https://skillicons.dev/icons?i=vue,react,nextjs,vite,nodejs,mysql,redis" alt="Fullstack" />
   <p><i>Complex B2B dashboards, enterprise supply-chain systems, client-side extensions, Node microservices.</i></p>
+</details>
+
+<details open>
+  <summary><b>🎨 Creative & 3D WebGL (Explorations)</b></summary>
+  <br>
+  <img src="https://skillicons.dev/icons?i=threejs,blender,ts" alt="3D Stack" />
+  <p><i>WebGL rendering pipelines, Three.js shaders, Blender PBR modeling, GLTF optimization, spatial interactions.</i></p>
 </details>
 
 <details>

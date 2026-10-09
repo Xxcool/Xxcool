@@ -5,8 +5,8 @@
 
   <h1>Hi, I'm Xxcool 👋</h1>
   <p>
-    <b>偏前端的全栈开发者 · 3D 数字孪生与 WebGL 探索者</b><br>
-    <i>喜欢把复杂工业与业务场景做成清晰、可靠、好用的数字化产品</i>
+    <b>偏前端的全栈开发者 · 喜欢把复杂业务做成清晰、可靠、好用的产品</b><br>
+    <i>保持好奇心，热衷于探索未知、参与开源与技术写作分享。</i>
   </p>
 
   <p>
@@ -43,7 +43,7 @@
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h4>⛵ <a href="https://github.com/Xxcool/juejin-csdn-extension">文章摆渡 (Article Ferry)</a></h4>
+      <h4>⛵ <a href="https://github.com/Xxcool/juejin-csdn-extension">Article Ferry (文章摆渡)</a></h4>
       <p><b>面向博主的端侧安全内容中枢</b></p>
       <p>掘金文章一键优雅摆渡至 CSDN、微信公众号、博客园草稿箱。支持无水印图床转存、专栏动态拉取与零 Cookie 隐私保障。</p>
       <p>
@@ -74,29 +74,29 @@
 
 ---
 
-### 👨‍💻 关于我与研发理念
+### 👨‍💻 关于我
 
 - 💻 **全栈交付**：在 Web、移动端与 Node.js 服务端之间持续构建完整闭环产品；
 - 📦 **业务深耕**：主导过 SaaS 平台与跨境电商供应链，目前深耕生鲜供应链复杂中后台体系；
-- 🤖 **Vibe Coding 实战**：深度践行 AI-native 研发工作流，重度借助大模型辅助架构设计、代码工程与端到端验证，完成从工业级 3D 孪生大屏到端侧工具的高效交付；
-- 🌱 **社区共建**：持续参与 **[juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage)** 社区生态共建，项目活跃贡献者（Active Contributor）。
+- 🤖 **Vibe Coding 实战**：深度践行 AI-native 研发工作流，重度借助大模型辅助架构设计、代码工程与端到端验证，高效完成从复杂业务系统到实用工具的交付；
+- 🧭 **探索与分享**：保持对新技术的好奇心，乐于跳出舒适圈尝试不同领域；热衷开源工具沉淀与技术写作，在掘金等平台持续输出实战总结与社区共建。
 
 ---
 
-### 🛠️ 技术专精与技术栈 (Tech Stack)
+### 🛠️ 技术栈与领域实践 (Tech Stack)
 
 <details open>
-  <summary><b>🎨 3D 视觉与图形工程 (核心优势)</b></summary>
-  <br>
-  <img src="https://skillicons.dev/icons?i=threejs,blender,ts" alt="3D Stack" />
-  <p><i>WebGL 渲染管线、Three.js 着色器与后期处理、Blender PBR 建模、GLTF 资源优化、空间交互设计。</i></p>
-</details>
-
-<details open>
-  <summary><b>💻 现代全栈与 Web 工程化</b></summary>
+  <summary><b>💻 现代全栈与 Web 工程化 (核心技术栈)</b></summary>
   <br>
   <img src="https://skillicons.dev/icons?i=vue,react,nextjs,vite,nodejs,mysql,redis" alt="Fullstack" />
   <p><i>复杂 B 端中后台体系、供应链系统、端侧浏览器扩展、Node 微服务与状态管理。</i></p>
+</details>
+
+<details open>
+  <summary><b>🎨 创意交互与 3D WebGL (探索尝试)</b></summary>
+  <br>
+  <img src="https://skillicons.dev/icons?i=threejs,blender,ts" alt="3D Stack" />
+  <p><i>WebGL 渲染管线、Three.js 着色器与后期处理、Blender PBR 建模、GLTF 资源优化、空间交互设计。</i></p>
 </details>
 
 <details>
