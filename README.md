@@ -1,90 +1,116 @@
 <div align="center">
+  <p align="right">
+    <b>English</b> · <a href="./README_CN.md">简体中文</a>
+  </p>
+
   <h1>Hi, I'm Xxcool 👋</h1>
-  <p><b>偏前端的全栈开发者 · 喜欢把复杂业务做成清晰、可靠、好用的产品</b></p>
   <p>
-    <a href="https://juejin.cn/user/4265760845468296/posts" target="_blank"><img src="https://img.shields.io/badge/掘金-技术创作者-1E80FF?style=flat-square&logo=juejin&logoColor=white" alt="掘金" /></a>
-    <a href="https://github.com/Xxcool/smart-warehouse" target="_blank"><img src="https://img.shields.io/badge/3D数字孪生-智慧仓储-42B883?style=flat-square&logo=threedotjs&logoColor=white" alt="智慧仓储" /></a>
-    <a href="https://github.com/Xxcool/juejin-csdn-extension" target="_blank"><img src="https://img.shields.io/badge/Chrome扩展-文章摆渡-10B981?style=flat-square&logo=googlechrome&logoColor=white" alt="文章摆渡" /></a>
-    <a href="https://github.com/juejin-cn/juejin-usage" target="_blank"><img src="https://img.shields.io/badge/Contributor-juejin--usage-007ACC?style=flat-square&logo=github&logoColor=white" alt="Contributor" /></a>
+    <b>Frontend-leaning Full-Stack Developer · Digital Twin & 3D WebGL Enthusiast</b><br>
+    <i>Turning complex industrial & business workflows into elegant, reliable & robust products.</i>
+  </p>
+
+  <p>
+    <a href="https://smart-warehouse-wine.vercel.app" target="_blank"><img src="https://img.shields.io/badge/Live_Demo-Smart_Warehouse-42B883?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Live Demo" /></a>
+    <a href="https://juejin.cn/user/4265760845468296/posts" target="_blank"><img src="https://img.shields.io/badge/Blog-Juejin_Creator-1E80FF?style=for-the-badge&logo=juejin&logoColor=white" alt="Juejin" /></a>
+    <a href="https://github.com/juejin-cn/juejin-usage" target="_blank"><img src="https://img.shields.io/badge/Contributor-juejin--usage-007ACC?style=for-the-badge&logo=github&logoColor=white" alt="Contributor" /></a>
   </p>
 </div>
 
 ---
 
-### 👨‍💻 关于我
-
-- 💻 **全栈交付**：在 Web、移动端与 Node.js 服务端之间持续构建完整闭环产品；
-- 📦 **业务深耕**：主导过 SaaS 平台与跨境电商供应链，目前深耕生鲜供应链复杂中后台体系；
-- 🤖 **Vibe Coding 实战**：深度践行 AI-native 研发工作流，重度借助大模型辅助架构设计、代码工程与端到端验证，完成从工业级 3D 孪生大屏到端侧工具的高效交付；
-- 🌱 **开源与社区**：
-  - **[智慧仓储数字孪生平台 (smart-warehouse)](https://github.com/Xxcool/smart-warehouse)**：Vibe Coding 打造的工业级 3D 智慧物流与冷链管控大屏系统（Vue 3 + Three.js + Blender）；
-  - **[文章摆渡 (Article Ferry)](https://github.com/Xxcool/juejin-csdn-extension)**：掘金文章同步助手 Chrome 扩展，一键同步至 CSDN、微信公众号、博客园草稿箱，排版保真，提升创作者分发效率；
-  - 持续参与 **[juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage)** 社区共建，项目活跃贡献者（Active Contributor），参与多项功能迭代与生态共建。
-
----
-
-### 🛠️ 技术栈 (Tech Stack)
+### 🌟 Featured Spotlight: 3D Smart Warehouse Digital Twin
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,vue,react,nextjs,vite,threejs,blender,nodejs,mysql,redis,docker,jenkins,git" alt="My Tech Stack" />
+  <a href="https://smart-warehouse-wine.vercel.app" target="_blank">
+    <img src="https://raw.githubusercontent.com/Xxcool/smart-warehouse/main/docs/images/15_cyber_digital_twin.png" width="100%" alt="Smart Warehouse Digital Twin Showcase" style="border-radius: 8px;" />
+  </a>
+  <br><br>
+  <p align="center">
+    <b>🏭 Industrial-grade 3D Smart Logistics & Cold-Chain Telemetry Platform</b><br>
+    Crafted via <b>Vibe Coding</b> using <code>Vue 3</code> + <code>Three.js (WebGL)</code> + <code>Blender PBR Modeling</code>.<br>
+    <i>Features AGV autonomous routing, cold-chain microclimate monitoring, cyber/daylight theme switching, and interactive telemetry HUDs.</i>
+  </p>
+  <p align="center">
+    <a href="https://smart-warehouse-wine.vercel.app" target="_blank"><b>👉 [Launch Live 3D Experience ↗]</b></a> &nbsp;|&nbsp; 
+    <a href="https://github.com/Xxcool/smart-warehouse"><b>[View GitHub Repository ↗]</b></a>
+  </p>
 </div>
 
 ---
 
-### 🚀 精选作品 (Featured Projects)
+### 🚀 Other Open-Source Projects
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h4>🏭 <a href="https://github.com/Xxcool/smart-warehouse">智慧仓储数字孪生 (smart-warehouse)</a></h4>
-      <p><b>工业级 3D 智慧物流与冷链孪生管控大屏</b></p>
-      <p>基于 Vue 3 + Three.js 与 Blender 高精建模，通过 Vibe Coding 敏捷落地。支持 AGV 自主巡线调度、自动化伸缩滚筒线、冷链微环境感知与 WebGL HUD 联动交互。</p>
+    <td width="33%" valign="top">
+      <h4>⛵ <a href="https://github.com/Xxcool/juejin-csdn-extension">Article Ferry (文章摆渡)</a></h4>
+      <p><b>Client-side Content Sync Hub</b></p>
+      <p>A privacy-first Chrome extension syncing articles across Juejin, CSDN, WeChat Official Accounts, and CNBlogs with zero-watermark image rehosting and draft preservation.</p>
       <p>
-        <img src="https://img.shields.io/badge/Stack-Vue3%20%7C%20Three.js-42b883?style=flat-square" />
-        <img src="https://img.shields.io/badge/Deploy-Vercel-black?style=flat-square" />
+        <img src="https://img.shields.io/badge/Chrome_Extension-TypeScript-10B981?style=flat-square" alt="Chrome Extension" />
       </p>
-      <a href="https://smart-warehouse-wine.vercel.app" target="_blank">在线体验 ↗</a>
+      <a href="https://github.com/Xxcool/juejin-csdn-extension/releases">Get Extension ↗</a>
     </td>
-    <td width="50%" valign="top">
-      <h4>⛵ <a href="https://github.com/Xxcool/juejin-csdn-extension">文章摆渡 (Article Ferry)</a></h4>
-      <p><b>面向技术博主的端侧安全内容中枢</b></p>
-      <p>将掘金文章优雅摆渡至 CSDN 和微信公众号平台。支持无水印图床转存、专栏动态拉取与零 Cookie 隐私保障。</p>
+    <td width="33%" valign="top">
+      <h4>🌱 <a href="https://github.com/Xxcool/app-harbor-web">App Harbor (芽分发)</a></h4>
+      <p><b>Android APK Beta Platform</b></p>
+      <p>Lightweight APK hosting & distribution hub featuring automated manifest parsing, multi-version tracking, and client-side update checking.</p>
       <p>
-        <img src="https://img.shields.io/github/v/release/Xxcool/juejin-csdn-extension?style=flat-square&color=blue&label=Release" />
+        <img src="https://img.shields.io/badge/Vue3-Cloudflare_Pages-F38020?style=flat-square" alt="Cloudflare Pages" />
       </p>
-      <a href="https://github.com/Xxcool/juejin-csdn-extension/releases">下载安装 ↗</a>
+      <a href="https://sprout-release.pages.dev" target="_blank">Live Demo ↗</a>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🌱 <a href="https://github.com/Xxcool/app-harbor-web">芽分发 (App Harbor)</a></h4>
-      <p><b>轻量级安卓内测安装包分发托管平台</b></p>
-      <p>支持 APK 解析、多版本迭代管理、实时下载统计与客户端在线更新检查，开箱即用。</p>
+    <td width="33%" valign="top">
+      <h4>🧰 <a href="https://github.com/Xxcool/pizhihui-toolkit">Pizhihui Toolkit (皮智慧)</a></h4>
+      <p><b>Zero-Telemetry Web Utilities</b></p>
+      <p>A curated suite of 50+ developer tools running 100% offline in browser sandboxes. High performance, zero telemetry, and zero server uploads.</p>
       <p>
-        <img src="https://img.shields.io/badge/Stack-Vue3%20%7C%20TS-42b883?style=flat-square" />
-        <img src="https://img.shields.io/badge/Deploy-Cloudflare-F38020?style=flat-square" />
+        <img src="https://img.shields.io/badge/50+_Tools-Offline_Safe-orange?style=flat-square" alt="Offline Safe" />
       </p>
-      <a href="https://sprout-release.pages.dev" target="_blank">在线体验 ↗</a>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🧰 <a href="https://github.com/Xxcool/pizhihui-toolkit">皮智慧工具站</a></h4>
-      <p><b>隐私优先的现代浏览器纯本地工具集</b></p>
-      <p>收录 50+ 个开箱即用的实用工具，所有数据计算与格式转换 100% 在端侧离线运行，绝不上传服务器。</p>
-      <p>
-        <img src="https://img.shields.io/badge/Tools-50%2B-orange?style=flat-square" />
-        <img src="https://img.shields.io/badge/Deploy-Vercel-black?style=flat-square" />
-      </p>
-      <a href="https://pizhihui-toolkit.vercel.app" target="_blank">在线体验 ↗</a>
+      <a href="https://pizhihui-toolkit.vercel.app" target="_blank">Launch App ↗</a>
     </td>
   </tr>
 </table>
 
 ---
 
-### 💬 与我联系
+### 👨‍💻 About Me & Engineering Philosophy
+
+- 💻 **Full-Stack Delivery**: Delivering complete end-to-end products across Web, Mobile, and Node.js backend architectures.
+- 📦 **Domain Expertise**: Led SaaS platform and cross-border e-commerce supply chain engineering; currently diving deep into complex enterprise admin systems for fresh food cold-chain logistics.
+- 🤖 **Vibe Coding & AI-Native**: Deeply embracing AI-native engineering workflows — heavily leveraging LLMs across architectural design, rapid prototyping, and automated verification to deliver everything from industrial 3D digital twins to client-side productivity utilities.
+- 🌱 **Community Collaboration**: Active contributor to the **[juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage)** open-source ecosystem.
+
+---
+
+### 🛠️ Tech Stack & Capabilities
+
+<details open>
+  <summary><b>🎨 3D & Creative Engineering (Core Speciality)</b></summary>
+  <br>
+  <img src="https://skillicons.dev/icons?i=threejs,blender,ts" alt="3D Stack" />
+  <p><i>WebGL rendering pipelines, Three.js shaders, Blender PBR modeling, GLTF optimization, Spatial UX.</i></p>
+</details>
+
+<details open>
+  <summary><b>💻 Modern Full-Stack & Web Engineering</b></summary>
+  <br>
+  <img src="https://skillicons.dev/icons?i=vue,react,nextjs,vite,nodejs,mysql,redis" alt="Fullstack" />
+  <p><i>Complex B2B dashboards, enterprise supply-chain systems, client-side extensions, Node microservices.</i></p>
+</details>
+
+<details>
+  <summary><b>⚙️ DevOps & Engineering Tooling</b></summary>
+  <br>
+  <img src="https://skillicons.dev/icons?i=docker,jenkins,git" alt="DevOps" />
+</details>
+
+---
+
+### 💬 Connect & Collaborate
 
 <div align="center">
-  <a href="https://github.com/Xxcool"><img src="https://img.shields.io/badge/GitHub-Xxcool-181717?style=flat-square&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/Xxcool"><img src="https://img.shields.io/badge/GitHub-Xxcool-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
   &nbsp;
-  <a href="https://juejin.cn/user/4265760845468296/posts"><img src="https://img.shields.io/badge/掘金-Xxcool-1E80FF?style=flat-square&logo=juejin&logoColor=white" /></a>
+  <a href="https://juejin.cn/user/4265760845468296/posts"><img src="https://img.shields.io/badge/Juejin-Xxcool-1E80FF?style=flat-square&logo=juejin&logoColor=white" alt="Juejin" /></a>
 </div>
