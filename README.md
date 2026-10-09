@@ -79,7 +79,10 @@
 - 💻 **Full-Stack Delivery**: Delivering complete end-to-end products across Web, Mobile, and Node.js backend architectures;
 - 📦 **Domain Expertise**: Led SaaS platform and cross-border e-commerce supply chain engineering; currently diving deep into complex enterprise admin systems for fresh food cold-chain logistics;
 - 🤖 **Vibe Coding & AI-Native**: Embracing AI-native development workflows — leveraging LLMs across architectural design, rapid prototyping, and automated verification to deliver projects efficiently;
-- 🧭 **Curiosity & Sharing**: Driven by curiosity to explore diverse technologies and build fun side projects; active in open-source collaboration and tech blogging to share practical learnings with the community.
+- 🌱 **Open Source & Community**:
+  - Active contributor to the **[juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage)** community ecosystem, participating in core feature iterations and community co-building;
+  - Passionate about transforming practical developer pain points into open-source utilities and writing in-depth tech articles on Juejin to share learnings with the developer community.
+
 
 ---
 
