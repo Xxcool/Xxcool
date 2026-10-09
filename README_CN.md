@@ -43,13 +43,13 @@
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h4>⛵ <a href="https://github.com/Xxcool/juejin-csdn-extension">Article Ferry (文章摆渡)</a></h4>
+      <h4>⛵ <a href="https://github.com/juejin-sync/juejin-sync">掘金同步助手 (Juejin Sync)</a></h4>
       <p><b>面向博主的端侧安全内容中枢</b></p>
       <p>掘金文章一键优雅摆渡至 CSDN、微信公众号、博客园草稿箱。支持无水印图床转存、专栏动态拉取与零 Cookie 隐私保障。</p>
       <p>
         <img src="https://img.shields.io/badge/Chrome扩展-TypeScript-10B981?style=flat-square" alt="Chrome 扩展" />
       </p>
-      <a href="https://github.com/Xxcool/juejin-csdn-extension/releases">下载扩展 ↗</a>
+      <a href="https://github.com/juejin-sync/juejin-sync/releases">下载扩展 ↗</a>
     </td>
     <td width="33%" valign="top">
       <h4>🌱 <a href="https://github.com/Xxcool/app-harbor-web">芽分发 (App Harbor)</a></h4>

@@ -43,13 +43,13 @@
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h4>⛵ <a href="https://github.com/Xxcool/juejin-csdn-extension">Article Ferry (文章摆渡)</a></h4>
+      <h4>⛵ <a href="https://github.com/juejin-sync/juejin-sync">Juejin Sync (掘金同步助手)</a></h4>
       <p><b>Client-side Content Sync Hub</b></p>
       <p>A privacy-first Chrome extension syncing articles across Juejin, CSDN, WeChat Official Accounts, and CNBlogs with zero-watermark image rehosting and draft preservation.</p>
       <p>
         <img src="https://img.shields.io/badge/Chrome_Extension-TypeScript-10B981?style=flat-square" alt="Chrome Extension" />
       </p>
-      <a href="https://github.com/Xxcool/juejin-csdn-extension/releases">Get Extension ↗</a>
+      <a href="https://github.com/juejin-sync/juejin-sync/releases">Get Extension ↗</a>
     </td>
     <td width="33%" valign="top">
       <h4>🌱 <a href="https://github.com/Xxcool/app-harbor-web">App Harbor (芽分发)</a></h4>
