@@ -18,7 +18,7 @@
 - 🤖 **Vibe Coding 实战**：深度践行 AI-native 研发工作流，重度借助大模型辅助架构设计、代码工程与端到端验证，完成从工业级 3D 孪生大屏到端侧工具的高效交付；
 - 🌱 **开源与社区**：
   - **[智慧仓储数字孪生平台 (smart-warehouse)](https://github.com/Xxcool/smart-warehouse)**：Vibe Coding 打造的工业级 3D 智慧物流与冷链管控大屏系统（Vue 3 + Three.js + Blender）；
-  - **[文章摆渡 (Article Ferry)](https://github.com/Xxcool/juejin-csdn-extension)**：掘金文章同步助手 Chrome 扩展，一键同步至 CSDN、微信公众号草稿箱，排版保真，提升创作者分发效率；
+  - **[文章摆渡 (Article Ferry)](https://github.com/Xxcool/juejin-csdn-extension)**：掘金文章同步助手 Chrome 扩展，一键同步至 CSDN、微信公众号、博客园草稿箱，排版保真，提升创作者分发效率；
   - 持续参与 **[juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage)** 社区共建，项目活跃贡献者（Active Contributor），参与多项功能迭代与生态共建。
 
 ---
