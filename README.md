@@ -18,71 +18,27 @@
 
 ---
 
-### 🌟 Featured Spotlight: 3D Smart Warehouse Digital Twin
+### 🚀 Projects
 
 <div align="center">
   <a href="https://smart-warehouse-wine.vercel.app" target="_blank">
-    <img src="https://raw.githubusercontent.com/Xxcool/smart-warehouse/main/docs/images/15_cyber_digital_twin.png" width="100%" alt="Smart Warehouse Digital Twin Showcase" style="border-radius: 8px;" />
+    <img src="https://raw.githubusercontent.com/Xxcool/smart-warehouse/main/docs/images/15_cyber_digital_twin.png" width="100%" alt="Smart Warehouse Digital Twin" style="border-radius: 8px;" />
   </a>
-  <br><br>
-  <p align="center">
-    <b>🏭 Industrial-grade 3D Smart Logistics & Cold-Chain Telemetry Platform</b><br>
-    Crafted via <b>Vibe Coding</b> using <code>Vue 3</code> + <code>Three.js (WebGL)</code> + <code>Blender PBR Modeling</code>.<br>
-    <i>Features AGV autonomous routing, cold-chain microclimate monitoring, cyber/daylight theme switching, and interactive telemetry HUDs.</i>
-  </p>
-  <p align="center">
-    <a href="https://smart-warehouse-wine.vercel.app" target="_blank"><b>👉 [Launch Live 3D Experience ↗]</b></a> &nbsp;|&nbsp; 
-    <a href="https://github.com/Xxcool/smart-warehouse"><b>[View GitHub Repository ↗]</b></a>
-  </p>
 </div>
 
----
-
-### 🚀 Other Open-Source Projects
-
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h4>⛵ <a href="https://github.com/juejin-sync/juejin-sync">Juejin Sync (掘金同步助手)</a></h4>
-      <p><b>Client-side Content Sync Hub</b></p>
-      <p>A privacy-first Chrome extension syncing articles across Juejin, CSDN, WeChat Official Accounts, and CNBlogs with zero-watermark image rehosting and draft preservation.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Chrome_Extension-TypeScript-10B981?style=flat-square" alt="Chrome Extension" />
-      </p>
-      <a href="https://github.com/juejin-sync/juejin-sync/releases">Get Extension ↗</a>
-    </td>
-    <td width="33%" valign="top">
-      <h4>🌱 <a href="https://github.com/Xxcool/app-harbor-web">App Harbor (芽分发)</a></h4>
-      <p><b>Android APK Beta Platform</b></p>
-      <p>Lightweight APK hosting & distribution hub featuring automated manifest parsing, multi-version tracking, and client-side update checking.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Vue3-Cloudflare_Pages-F38020?style=flat-square" alt="Cloudflare Pages" />
-      </p>
-      <a href="https://sprout-release.pages.dev" target="_blank">Live Demo ↗</a>
-    </td>
-    <td width="33%" valign="top">
-      <h4>🧰 <a href="https://github.com/Xxcool/pizhihui-toolkit">Pizhihui Toolkit (皮智慧)</a></h4>
-      <p><b>Zero-Telemetry Web Utilities</b></p>
-      <p>A curated suite of 50+ developer tools running 100% offline in browser sandboxes. High performance, zero telemetry, and zero server uploads.</p>
-      <p>
-        <img src="https://img.shields.io/badge/50+_Tools-Offline_Safe-orange?style=flat-square" alt="Offline Safe" />
-      </p>
-      <a href="https://pizhihui-toolkit.vercel.app" target="_blank">Launch App ↗</a>
-    </td>
-  </tr>
-</table>
+- **[Smart Warehouse Digital Twin (smart-warehouse)](https://github.com/Xxcool/smart-warehouse)**: A 3D logistics & warehouse digital twin dashboard built with Vue 3, Three.js, and Blender. Features AGV route simulation, cold-chain telemetry, and cyber/daylight theme switching.
+  - 🔗 [Live Demo ↗](https://smart-warehouse-wine.vercel.app) · [Repository ↗](https://github.com/Xxcool/smart-warehouse)
+- **[Juejin Sync (掘金同步助手)](https://github.com/juejin-sync/juejin-sync)**: A privacy-first Chrome extension for tech bloggers to sync articles from Juejin to CSDN, WeChat Official Accounts, and CNBlogs draft boxes with zero-watermark image rehosting.
+  - 🔗 [Repository ↗](https://github.com/juejin-sync/juejin-sync) · [Releases ↗](https://github.com/juejin-sync/juejin-sync/releases)
 
 ---
 
 ### 👨‍💻 About Me
 
-- 💻 **Full-Stack Delivery**: Delivering complete end-to-end products across Web, Mobile, and Node.js backend architectures;
-- 📦 **End-to-End AI Digital Supply Chain**: Architecting comprehensive intelligent supply chain ecosystems — bridging **procurement, supplier portals, operations central dispatch, and e-commerce mini-programs**, seamlessly integrated with **industrial factory sorting hardware and warehouse handheld PDA terminals**; seasoned in **cross-border logistics & freight supply chain** architectures;
-- 🤖 **Vibe Coding & AI-Native**: Embracing AI-native development workflows — leveraging LLMs across architectural design, rapid prototyping, and automated verification to deliver projects efficiently;
-- 🌱 **Open Source & Community**:
-  - Active contributor to the **[juejin-cn/juejin-usage](https://github.com/juejin-cn/juejin-usage)** community ecosystem, participating in core feature iterations and community co-building;
-  - Passionate about transforming practical developer pain points into open-source utilities and writing in-depth tech articles on Juejin to share learnings with the developer community.
-
+- 💻 **Full-Stack**: Building products across Web, Mobile, Node.js, and browser extensions;
+- 📦 **Domain**: Experienced in digital supply chains (procurement, mini-programs, sorting hardware & PDA) and cross-border logistics;
+- 🤖 **Workflows**: Embracing AI-native / Vibe Coding practices to accelerate prototyping and delivery;
+- 🌱 **Community**: Active contributor to [juejin-usage](https://github.com/juejin-cn/juejin-usage); enjoy tech blogging and open-source sharing.
 
 ---
 
