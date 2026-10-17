@@ -39,7 +39,7 @@
 
 城市区域 → 示范园区 → A1 科创大厦的三维展示，包含连续镜头、楼宇选择与指标联动、智能信息卡和道路交通动画。规划、模型生成与前端联动采用可重建流程；场景与经营数据为演示设定。
 
-[在线体验 →](https://xxcool.github.io/urban-building-dashboard/) · [代码与运行说明](https://github.com/Xxcool/urban-building-dashboard)
+[在线体验 →](https://urban-building-dashboard.vercel.app/) · [代码与运行说明](https://github.com/Xxcool/urban-building-dashboard)
 
 ---
 

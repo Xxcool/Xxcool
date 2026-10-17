@@ -39,7 +39,7 @@
 
 An interactive journey from a city overview to a demo campus and the A1 tower. Features continuous camera transitions, building selection with synchronized metrics, adaptive information cards, and animated traffic. Planning, model generation, and the frontend follow a reproducible workflow. All campus scenes and operating data are demonstrative.
 
-[Live demo →](https://xxcool.github.io/urban-building-dashboard/) · [Code & setup](https://github.com/Xxcool/urban-building-dashboard)
+[Live demo →](https://urban-building-dashboard.vercel.app/) · [Code & setup](https://github.com/Xxcool/urban-building-dashboard)
 
 ---
 
