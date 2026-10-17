@@ -20,16 +20,22 @@
 
 ### 🚀 开源项目
 
-<div align="center">
-  <a href="https://smart-warehouse-wine.vercel.app" target="_blank">
-    <img src="https://raw.githubusercontent.com/Xxcool/smart-warehouse/main/docs/images/15_cyber_digital_twin.png" width="100%" alt="智慧仓储数字孪生" style="border-radius: 8px;" />
-  </a>
-</div>
+### 城市楼宇三维大屏
 
-- **[智慧仓储数字孪生平台 (smart-warehouse)](https://github.com/Xxcool/smart-warehouse)**：基于 Vue 3 + Three.js + Blender 打造的 3D 仓储物流数字孪生大屏，支持 AGV 自主巡线调度、冷链环境感知与赛博夜景/白昼展厅双主题切换。
-  - 🔗 [在线体验 ↗](https://smart-warehouse-wine.vercel.app) · [代码仓库 ↗](https://github.com/Xxcool/smart-warehouse)
-- **[掘金同步助手 (Juejin Sync)](https://github.com/juejin-sync/juejin-sync)**：面向技术博主的端侧内容同步 Chrome 扩展，支持将掘金文章一键同步至 CSDN、微信公众号、博客园草稿箱，包含无水印图床转存与零 Cookie 隐私保障。
-  - 🔗 [代码仓库 ↗](https://github.com/juejin-sync/juejin-sync) · [下载扩展 ↗](https://github.com/juejin-sync/juejin-sync/releases)
+[![城市楼宇大屏 · 园区总览](https://raw.githubusercontent.com/Xxcool/urban-building-dashboard/main/checks/campus-final-v22.png)](https://github.com/Xxcool/urban-building-dashboard)
+
+**[Urban Building Dashboard](https://github.com/Xxcool/urban-building-dashboard)** · Vue 3 / Three.js / Blender
+
+城市区域 → 示范园区 → A1 科创大厦的三维展示，包含连续镜头、楼宇选择与指标联动、智能信息卡和道路交通动画。规划、模型生成与前端联动采用可重建流程；场景与经营数据为演示设定。
+
+[在线体验 →](https://xxcool.github.io/urban-building-dashboard/) · [代码与运行说明](https://github.com/Xxcool/urban-building-dashboard)
+
+### 更多项目
+
+| 项目 | 说明 | 入口 |
+| --- | --- | --- |
+| **智慧仓储数字孪生** | Vue 3 + Three.js + Blender，AGV 路线仿真、冷链展示及日夜双主题 | [代码](https://github.com/Xxcool/smart-warehouse) · [体验](https://smart-warehouse-wine.vercel.app) |
+| **掘金同步助手** | 面向技术博主的浏览器扩展，将文章同步至多个平台草稿箱 | [代码](https://github.com/juejin-sync/juejin-sync) · [下载](https://github.com/juejin-sync/juejin-sync/releases) |
 
 ---
 
