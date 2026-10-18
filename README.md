@@ -33,11 +33,11 @@
 
 ### Urban Building Dashboard
 
-[![Urban Building Dashboard · Campus view](https://raw.githubusercontent.com/Xxcool/urban-building-dashboard/main/checks/campus-final-v22.png)](https://github.com/Xxcool/urban-building-dashboard)
+[![Urban Building Dashboard · Campus view](https://raw.githubusercontent.com/Xxcool/urban-building-dashboard/main/docs/images/campus.png)](https://github.com/Xxcool/urban-building-dashboard)
 
 **[Urban Building Dashboard](https://github.com/Xxcool/urban-building-dashboard)** · Vue 3 / Three.js / Blender
 
-An interactive journey from a city overview to a demo campus and the A1 tower. Features continuous camera transitions, building selection with synchronized metrics, adaptive information cards, and animated traffic. Planning, model generation, and the frontend follow a reproducible workflow. All campus scenes and operating data are demonstrative.
+An interactive journey from a city overview to a demo campus and the A1 tower. Features continuous camera transitions, building selection with synchronized metrics, adaptive information cards, and animated traffic. Models are produced through Blender MCP with baked static lighting, landscaped grounds, fountains, and mixed traffic. All scenes and operating data are demonstrative.
 
 [Live demo →](https://urban-building-dashboard.vercel.app/) · [Code & setup](https://github.com/Xxcool/urban-building-dashboard)
 
