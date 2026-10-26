@@ -14,7 +14,7 @@
 
 **React · TypeScript · Three.js · Blender**
 
-[![医院大屏实际网页截图](https://raw.githubusercontent.com/Xxcool/tongji-hospital-3d-dashboard/main/docs/verification/runtime-life-day.png)](https://xxcool.github.io/tongji-hospital-3d-dashboard)
+[![医院大屏实际网页截图](https://raw.githubusercontent.com/Xxcool/tongji-hospital-3d-dashboard/main/docs/images/campus-overview-2026-10-26.png)](https://xxcool.github.io/tongji-hospital-3d-dashboard)
 
 围绕门急诊服务压力与资源分布，把院区导览、楼层展开、分区定位和时段变化连成一条体验路径。
 

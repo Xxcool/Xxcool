@@ -14,7 +14,7 @@ I have experience with supply-chain and cross-border logistics systems, and enjo
 
 **React · TypeScript · Three.js · Blender**
 
-[![Hospital dashboard runtime screenshot](https://raw.githubusercontent.com/Xxcool/tongji-hospital-3d-dashboard/main/docs/verification/runtime-life-day.png)](https://xxcool.github.io/tongji-hospital-3d-dashboard)
+[![Hospital dashboard runtime screenshot](https://raw.githubusercontent.com/Xxcool/tongji-hospital-3d-dashboard/main/docs/images/campus-overview-2026-10-26.png)](https://xxcool.github.io/tongji-hospital-3d-dashboard)
 
 A campus visualization exploring outpatient and emergency service demand through building navigation, floor exploration, zone selection, and time-based scenarios.
 
