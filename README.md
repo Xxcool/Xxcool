@@ -1,85 +1,80 @@
-<div align="center">
-  <p align="right">
-    <b>English</b> · <a href="./README_CN.md">简体中文</a>
-  </p>
+<p align="right"><b>English</b> · <a href="./README_CN.md">简体中文</a></p>
 
-  <h1>Hi, I'm Xxcool 👋</h1>
-  <p>
-    <b>Frontend-leaning Full-Stack Developer · Turning complex business domains into clean, reliable & robust products</b><br>
-    <i>Driven by curiosity — exploring new tech, building open-source tools & writing tech blogs.</i>
-  </p>
+# Hi, I'm Xxcool 👋
 
-  <p>
-    <a href="https://smart-warehouse-wine.vercel.app" target="_blank"><img src="https://img.shields.io/badge/Live_Demo-Smart_Warehouse-42B883?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Live Demo" /></a>
-    <a href="https://juejin.cn/user/4265760845468296/posts" target="_blank"><img src="https://img.shields.io/badge/Blog-Juejin_Creator-1E80FF?style=for-the-badge&logo=juejin&logoColor=white" alt="Juejin" /></a>
-    <a href="https://github.com/juejin-cn/juejin-usage" target="_blank"><img src="https://img.shields.io/badge/Contributor-juejin--usage-007ACC?style=for-the-badge&logo=github&logoColor=white" alt="Contributor" /></a>
-  </p>
-</div>
+**A frontend-focused full-stack developer working on business applications, 3D visualization, and developer tools.**
 
----
+I have experience with supply-chain and cross-border logistics systems, and enjoy turning workflows and data relationships into usable products. Recently, I've been exploring React / Vue, Three.js, and Blender to make spatial interaction a useful way to understand business data.
 
-### 🚀 Projects
+[Technical blog](https://juejin.cn/user/4265760845468296/posts) · [Open-source contributions](https://github.com/juejin-cn/juejin-usage)
 
-<div align="center">
-  <a href="https://smart-warehouse-wine.vercel.app" target="_blank">
-    <img src="https://raw.githubusercontent.com/Xxcool/smart-warehouse/main/docs/images/15_cyber_digital_twin.png" width="100%" alt="Smart Warehouse Digital Twin" style="border-radius: 8px;" />
-  </a>
-</div>
+## Selected 3D projects
 
-- **[Smart Warehouse Digital Twin (smart-warehouse)](https://github.com/Xxcool/smart-warehouse)**: A 3D logistics & warehouse digital twin dashboard built with Vue 3, Three.js, and Blender. Features AGV route simulation, cold-chain telemetry, and cyber/daylight theme switching.
-  - 🔗 [Live Demo ↗](https://smart-warehouse-wine.vercel.app) · [Repository ↗](https://github.com/Xxcool/smart-warehouse)
-- **[Juejin Sync (掘金同步助手)](https://github.com/juejin-sync/juejin-sync)**: A privacy-first Chrome extension for tech bloggers to sync articles from Juejin to CSDN, WeChat Official Accounts, and CNBlogs draft boxes with zero-watermark image rehosting.
-  - 🔗 [Repository ↗](https://github.com/juejin-sync/juejin-sync) · [Releases ↗](https://github.com/juejin-sync/juejin-sync/releases)
+### Tongji Hospital · 3D Operations Dashboard
 
-### Urban Building Dashboard
+**React · TypeScript · Three.js · Blender**
 
-[![Urban Building Dashboard · Campus view](https://raw.githubusercontent.com/Xxcool/urban-building-dashboard/main/docs/images/campus.png)](https://github.com/Xxcool/urban-building-dashboard)
+[![Hospital dashboard runtime screenshot](https://raw.githubusercontent.com/Xxcool/tongji-hospital-3d-dashboard/main/docs/verification/runtime-life-day.png)](https://xxcool.github.io/tongji-hospital-3d-dashboard)
 
-**[Urban Building Dashboard](https://github.com/Xxcool/urban-building-dashboard)** · Vue 3 / Three.js / Blender
+A campus visualization exploring outpatient and emergency service demand through building navigation, floor exploration, zone selection, and time-based scenarios.
 
-An interactive journey from a city overview to a demo campus and the A1 tower. Features continuous camera transitions, building selection with synchronized metrics, adaptive information cards, and animated traffic. Models are produced through Blender MCP with baked static lighting, landscaped grounds, fountains, and mixed traffic. All scenes and operating data are demonstrative.
+- Selecting a building updates the camera and its information panel together.
+- Explore schematic 1F / 2F outpatient floors and locate waiting and consultation zones separately.
+- Compare four simulated time periods, switch day/night modes, and tour the campus.
 
-[Live demo →](https://urban-building-dashboard.vercel.app/) · [Code & setup](https://github.com/Xxcool/urban-building-dashboard)
+An unofficial demonstration with simulated operating data and schematic interiors. Model details remain under development.
 
----
+[Live demo](https://xxcool.github.io/tongji-hospital-3d-dashboard) · [Code & setup](https://github.com/Xxcool/tongji-hospital-3d-dashboard)
 
-### 👨‍💻 About Me
+### Urban Buildings · From City to Campus to Tower
 
-- 💻 **Full-Stack**: Building products across Web, Mobile, Node.js, and browser extensions;
-- 📦 **Domain**: Experienced in digital supply chains (procurement, mini-programs, sorting hardware & PDA) and cross-border logistics;
-- 🤖 **Workflows**: Embracing AI-native / Vibe Coding practices to accelerate prototyping and delivery;
-- 🌱 **Community**: Active contributor to [juejin-usage](https://github.com/juejin-cn/juejin-usage); enjoy tech blogging and open-source sharing.
+**Vue 3 · Three.js · Blender**
 
----
+[![Urban building dashboard campus view](https://raw.githubusercontent.com/Xxcool/urban-building-dashboard/main/docs/images/campus.png)](https://urban-building-dashboard.vercel.app)
 
-### 🛠️ Tech Stack & Capabilities
+A spatial journey through a city overview, a demonstration campus, and the A1 tower, with a focus on continuous camera transitions and information across levels.
 
-<details open>
-  <summary><b>💻 Modern Full-Stack & Web Engineering (Core Stack)</b></summary>
-  <br>
-  <img src="https://skillicons.dev/icons?i=vue,react,nextjs,vite,nodejs,mysql,redis" alt="Fullstack" />
-  <p><i>Complex B2B dashboards, enterprise supply-chain systems, client-side extensions, Node microservices.</i></p>
-</details>
+- Building selection drives the associated metrics and information panels.
+- Traffic animation, landscaping, and baked static lighting shape the scene.
+- Editable Blender assets support continued iteration in the browser.
 
-<details open>
-  <summary><b>🎨 Creative & 3D WebGL (Explorations)</b></summary>
-  <br>
-  <img src="https://skillicons.dev/icons?i=threejs,blender,ts" alt="3D Stack" />
-  <p><i>WebGL rendering pipelines, Three.js shaders, Blender PBR modeling, GLTF optimization, spatial interactions.</i></p>
-</details>
+Scenes and operating data are demonstrative.
 
-<details>
-  <summary><b>⚙️ DevOps & Engineering Tooling</b></summary>
-  <br>
-  <img src="https://skillicons.dev/icons?i=docker,jenkins,git" alt="DevOps" />
-</details>
+[Live demo](https://urban-building-dashboard.vercel.app) · [Code & setup](https://github.com/Xxcool/urban-building-dashboard)
 
----
+### Smart Warehouse · Logistics Visualization
 
-### 💬 Connect & Collaborate
+**Vue 3 · Three.js · Blender**
 
-<div align="center">
-  <a href="https://github.com/Xxcool"><img src="https://img.shields.io/badge/GitHub-Xxcool-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-  &nbsp;
-  <a href="https://juejin.cn/user/4265760845468296/posts"><img src="https://img.shields.io/badge/Juejin-Xxcool-1E80FF?style=flat-square&logo=juejin&logoColor=white" alt="Juejin" /></a>
-</div>
+[![Smart warehouse project preview](https://raw.githubusercontent.com/Xxcool/smart-warehouse/main/docs/images/15_cyber_digital_twin.png)](https://smart-warehouse-wine.vercel.app)
+
+A warehouse visualization exploring AGV route simulation, cold-chain metrics, and scene themes to represent equipment movement alongside operational information.
+
+- Routes and equipment animation illustrate logistics processes.
+- Cold-chain indicators add operational context.
+- Cyber-night and daylight themes offer different viewing modes.
+
+[Live demo](https://smart-warehouse-wine.vercel.app) · [Code & setup](https://github.com/Xxcool/smart-warehouse)
+
+## Developer tools
+
+### Juejin Sync
+
+A Chrome extension for technical writers that helps synchronize Juejin articles to CSDN, WeChat Official Accounts, and CNBlogs drafts, reducing repetitive content preparation and image handling across platforms.
+
+[Repository](https://github.com/juejin-sync/juejin-sync) · [Downloads & releases](https://github.com/juejin-sync/juejin-sync/releases)
+
+## Technology & engineering practice
+
+| Area | Focus |
+|---|---|
+| Frontend engineering | Vue, React, TypeScript, Vite; business workflows, state, and interaction |
+| 3D visualization | Three.js, Blender; spatial hierarchy, camera transitions, assets, and materials |
+| Full-stack & tools | Node.js, MySQL, Redis; services, browser extensions, and development workflows |
+| Business domains | Supply-chain procurement and commerce, sorting equipment and PDA workflows, cross-border logistics |
+
+I use AI to assist research, design references, coding, and asset production. Blender MCP connects model editing and export with browser-based checks of visuals, interactions, and data. My focus is on the implementation details that turn concepts into working projects.
+
+## Writing & community
+
+I share development experience on [Juejin](https://juejin.cn/user/4265760845468296/posts) and contribute to projects such as [juejin-usage](https://github.com/juejin-cn/juejin-usage). Happy to exchange ideas about business applications, 3D visualization, and developer tools.
