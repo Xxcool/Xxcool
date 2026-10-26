@@ -10,21 +10,19 @@ I have experience with supply-chain and cross-border logistics systems, and enjo
 
 ## Selected 3D projects
 
-### Tongji Hospital · 3D Operations Dashboard
+### Smart Warehouse · Logistics Visualization
 
-**React · TypeScript · Three.js · Blender**
+**Vue 3 · Three.js · Blender**
 
-[![Hospital dashboard runtime screenshot](https://raw.githubusercontent.com/Xxcool/tongji-hospital-3d-dashboard/main/docs/images/campus-overview-2026-10-26.png)](https://xxcool.github.io/tongji-hospital-3d-dashboard)
+[![Smart warehouse project preview](https://raw.githubusercontent.com/Xxcool/smart-warehouse/main/docs/images/15_cyber_digital_twin.png)](https://smart-warehouse-wine.vercel.app)
 
-A campus visualization exploring outpatient and emergency service demand through building navigation, floor exploration, zone selection, and time-based scenarios.
+A warehouse visualization exploring AGV route simulation, cold-chain metrics, and scene themes to represent equipment movement alongside operational information.
 
-- Selecting a building updates the camera and its information panel together.
-- Explore schematic 1F / 2F outpatient floors and locate waiting and consultation zones separately.
-- Compare four simulated time periods, switch day/night modes, and tour the campus.
+- Routes and equipment animation illustrate logistics processes.
+- Cold-chain indicators add operational context.
+- Cyber-night and daylight themes offer different viewing modes.
 
-An unofficial demonstration with simulated operating data and schematic interiors. Model details remain under development.
-
-[Live demo](https://xxcool.github.io/tongji-hospital-3d-dashboard) · [Code & setup](https://github.com/Xxcool/tongji-hospital-3d-dashboard)
+[Live demo](https://smart-warehouse-wine.vercel.app) · [Code & setup](https://github.com/Xxcool/smart-warehouse)
 
 ### Urban Buildings · From City to Campus to Tower
 
@@ -42,19 +40,21 @@ Scenes and operating data are demonstrative.
 
 [Live demo](https://urban-building-dashboard.vercel.app) · [Code & setup](https://github.com/Xxcool/urban-building-dashboard)
 
-### Smart Warehouse · Logistics Visualization
+### Tongji Hospital · 3D Operations Dashboard
 
-**Vue 3 · Three.js · Blender**
+**React · TypeScript · Three.js · Blender**
 
-[![Smart warehouse project preview](https://raw.githubusercontent.com/Xxcool/smart-warehouse/main/docs/images/15_cyber_digital_twin.png)](https://smart-warehouse-wine.vercel.app)
+[![Hospital dashboard runtime screenshot](https://raw.githubusercontent.com/Xxcool/tongji-hospital-3d-dashboard/main/docs/images/campus-overview-2026-10-26.png)](https://xxcool.github.io/tongji-hospital-3d-dashboard)
 
-A warehouse visualization exploring AGV route simulation, cold-chain metrics, and scene themes to represent equipment movement alongside operational information.
+A campus visualization exploring outpatient and emergency service demand through building navigation, floor exploration, zone selection, and time-based scenarios.
 
-- Routes and equipment animation illustrate logistics processes.
-- Cold-chain indicators add operational context.
-- Cyber-night and daylight themes offer different viewing modes.
+- Selecting a building updates the camera and its information panel together.
+- Explore schematic 1F / 2F outpatient floors and locate waiting and consultation zones separately.
+- Compare four simulated time periods, switch day/night modes, and tour the campus.
 
-[Live demo](https://smart-warehouse-wine.vercel.app) · [Code & setup](https://github.com/Xxcool/smart-warehouse)
+An unofficial demonstration with simulated operating data and schematic interiors. Model details remain under development.
+
+[Live demo](https://xxcool.github.io/tongji-hospital-3d-dashboard) · [Code & setup](https://github.com/Xxcool/tongji-hospital-3d-dashboard)
 
 ## Developer tools
 

@@ -10,21 +10,19 @@
 
 ## 精选三维作品
 
-### 同济医院 · 三维智慧运行中心
+### 智慧仓储 · 物流场景可视化
 
-**React · TypeScript · Three.js · Blender**
+**Vue 3 · Three.js · Blender**
 
-[![医院大屏实际网页截图](https://raw.githubusercontent.com/Xxcool/tongji-hospital-3d-dashboard/main/docs/images/campus-overview-2026-10-26.png)](https://xxcool.github.io/tongji-hospital-3d-dashboard)
+[![智慧仓储项目预览](https://raw.githubusercontent.com/Xxcool/smart-warehouse/main/docs/images/15_cyber_digital_twin.png)](https://smart-warehouse-wine.vercel.app)
 
-围绕门急诊服务压力与资源分布，把院区导览、楼层展开、分区定位和时段变化连成一条体验路径。
+围绕仓储物流展示 AGV 路线模拟、冷链环境指标及场景主题切换，探索设备运动和运营信息的三维表达。
 
-- 选择建筑时，镜头与区域信息同步切换。
-- 从院区进入门诊 1F / 2F 示意楼层，分别定位候诊区与接诊区。
-- 对照四个时段的模拟指标，并体验日夜切换与场景巡游。
+- 通过路线与设备动画展示物流过程。
+- 结合冷链指标观察场景状态。
+- 支持赛博夜景与白昼主题。
 
-非医院官方项目，运行数据和内部空间均为演示设定。模型细节仍在持续完善。
-
-[在线体验](https://xxcool.github.io/tongji-hospital-3d-dashboard) · [源码与运行说明](https://github.com/Xxcool/tongji-hospital-3d-dashboard)
+[在线体验](https://smart-warehouse-wine.vercel.app) · [源码与运行说明](https://github.com/Xxcool/smart-warehouse)
 
 ### 城市楼宇 · 从城市走进园区与楼栋
 
@@ -42,19 +40,21 @@
 
 [在线体验](https://urban-building-dashboard.vercel.app) · [源码与运行说明](https://github.com/Xxcool/urban-building-dashboard)
 
-### 智慧仓储 · 物流场景可视化
+### 同济医院 · 三维智慧运行中心
 
-**Vue 3 · Three.js · Blender**
+**React · TypeScript · Three.js · Blender**
 
-[![智慧仓储项目预览](https://raw.githubusercontent.com/Xxcool/smart-warehouse/main/docs/images/15_cyber_digital_twin.png)](https://smart-warehouse-wine.vercel.app)
+[![医院大屏实际网页截图](https://raw.githubusercontent.com/Xxcool/tongji-hospital-3d-dashboard/main/docs/images/campus-overview-2026-10-26.png)](https://xxcool.github.io/tongji-hospital-3d-dashboard)
 
-围绕仓储物流展示 AGV 路线模拟、冷链环境指标及场景主题切换，探索设备运动和运营信息的三维表达。
+围绕门急诊服务压力与资源分布，把院区导览、楼层展开、分区定位和时段变化连成一条体验路径。
 
-- 通过路线与设备动画展示物流过程。
-- 结合冷链指标观察场景状态。
-- 支持赛博夜景与白昼主题。
+- 选择建筑时，镜头与区域信息同步切换。
+- 从院区进入门诊 1F / 2F 示意楼层，分别定位候诊区与接诊区。
+- 对照四个时段的模拟指标，并体验日夜切换与场景巡游。
 
-[在线体验](https://smart-warehouse-wine.vercel.app) · [源码与运行说明](https://github.com/Xxcool/smart-warehouse)
+非医院官方项目，运行数据和内部空间均为演示设定。模型细节仍在持续完善。
+
+[在线体验](https://xxcool.github.io/tongji-hospital-3d-dashboard) · [源码与运行说明](https://github.com/Xxcool/tongji-hospital-3d-dashboard)
 
 ## 开发工具
 
