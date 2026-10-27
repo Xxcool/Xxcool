@@ -28,7 +28,7 @@
 
 **Vue 3 · Three.js · Blender**
 
-[![城市楼宇大屏园区视图](https://raw.githubusercontent.com/Xxcool/urban-building-dashboard/main/docs/images/campus.png)](https://urban-building-dashboard.vercel.app)
+[![城市楼宇大屏城市视图](https://raw.githubusercontent.com/Xxcool/urban-building-dashboard/main/docs/images/city.jpg)](https://urban-building-dashboard.vercel.app)
 
 以城市区域、示范园区和 A1 科创大厦构建多层级空间展示，关注层级切换时的连续镜头与信息组织。
 
@@ -44,7 +44,7 @@
 
 **React · TypeScript · Three.js · Blender**
 
-[![医院大屏实际网页截图](https://raw.githubusercontent.com/Xxcool/tongji-hospital-3d-dashboard/main/docs/images/campus-overview-2026-10-26.png)](https://xxcool.github.io/tongji-hospital-3d-dashboard)
+[![医院大屏实际网页截图](https://raw.githubusercontent.com/Xxcool/hospital-twin/main/docs/images/campus-overview-2026-10-26.png)](https://xxcool.github.io/hospital-twin/)
 
 围绕门急诊服务压力与资源分布，把院区导览、楼层展开、分区定位和时段变化连成一条体验路径。
 
@@ -54,7 +54,7 @@
 
 非医院官方项目，运行数据和内部空间均为演示设定。模型细节仍在持续完善。
 
-[在线体验](https://xxcool.github.io/tongji-hospital-3d-dashboard) · [源码与运行说明](https://github.com/Xxcool/tongji-hospital-3d-dashboard)
+[在线体验](https://xxcool.github.io/hospital-twin/) · [源码与运行说明](https://github.com/Xxcool/hospital-twin)
 
 ## 开发工具
 

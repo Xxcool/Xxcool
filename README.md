@@ -28,7 +28,7 @@ A warehouse visualization exploring AGV route simulation, cold-chain metrics, an
 
 **Vue 3 · Three.js · Blender**
 
-[![Urban building dashboard campus view](https://raw.githubusercontent.com/Xxcool/urban-building-dashboard/main/docs/images/campus.png)](https://urban-building-dashboard.vercel.app)
+[![Urban building dashboard city view](https://raw.githubusercontent.com/Xxcool/urban-building-dashboard/main/docs/images/city.jpg)](https://urban-building-dashboard.vercel.app)
 
 A spatial journey through a city overview, a demonstration campus, and the A1 tower, with a focus on continuous camera transitions and information across levels.
 
@@ -44,7 +44,7 @@ Scenes and operating data are demonstrative.
 
 **React · TypeScript · Three.js · Blender**
 
-[![Hospital dashboard runtime screenshot](https://raw.githubusercontent.com/Xxcool/tongji-hospital-3d-dashboard/main/docs/images/campus-overview-2026-10-26.png)](https://xxcool.github.io/tongji-hospital-3d-dashboard)
+[![Hospital dashboard runtime screenshot](https://raw.githubusercontent.com/Xxcool/hospital-twin/main/docs/images/campus-overview-2026-10-26.png)](https://xxcool.github.io/hospital-twin/)
 
 A campus visualization exploring outpatient and emergency service demand through building navigation, floor exploration, zone selection, and time-based scenarios.
 
@@ -54,7 +54,7 @@ A campus visualization exploring outpatient and emergency service demand through
 
 An unofficial demonstration with simulated operating data and schematic interiors. Model details remain under development.
 
-[Live demo](https://xxcool.github.io/tongji-hospital-3d-dashboard) · [Code & setup](https://github.com/Xxcool/tongji-hospital-3d-dashboard)
+[Live demo](https://xxcool.github.io/hospital-twin/) · [Code & setup](https://github.com/Xxcool/hospital-twin)
 
 ## Developer tools
 
