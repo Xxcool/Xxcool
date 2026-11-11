@@ -2,6 +2,7 @@
   "user": "Xxcool",
   "timezoneOffsetHours": 8,
   "location": "Wuhan",
+  "horizonStyle": "geek",
   "top": 5,
   "buildTopics": [
     "threejs",
