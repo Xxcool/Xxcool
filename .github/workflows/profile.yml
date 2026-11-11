@@ -1,0 +1,29 @@
+name: redraw-profile
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 按北京时间（UTC+8）关键时段触发，覆盖 dawn(06:17)、day(08:17/12:17)、golden(16:17)、dusk(18:17)、night(20:17/00:17)，
+    # 错开整点与半点避免 GitHub Actions 队列拥堵，同时控制每日自动提交次数。
+    - cron: "17 0,4,8,10,12,16,22 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  redraw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node .github/scripts/profile/build.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: commit if changed
+        run: |
+          git add assets
+          if git diff --cached --quiet; then echo "nothing to redraw"; exit 0; fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "chore(profile): 自动重绘主页天际线与终端状态"
+          git push

@@ -1,0 +1,18 @@
+{
+  "user": "Xxcool",
+  "timezoneOffsetHours": 8,
+  "location": "Wuhan",
+  "top": 5,
+  "buildTopics": [
+    "threejs",
+    "three-js",
+    "webgl",
+    "webgl2",
+    "webgpu",
+    "blender",
+    "digital-twin",
+    "react-three-fiber",
+    "ai-agent",
+    "llm-agent"
+  ]
+}
