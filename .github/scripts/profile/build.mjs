@@ -184,9 +184,9 @@ ${cursor}
 `;
 }
 
-// ---------- 极客赛博天际线 SVG 生成（支持工作日/周末 + 5 时段昼夜自动切换） ----------
+// ---------- 武汉城市江畔天际线 SVG 生成（支持昼夜 5 时段 + 工作日/周末细节自动切换） ----------
 
-/** 确定性伪随机数生成器（按日期固定当天城市/建筑轮廓） */
+/** 确定性伪随机数生成器（按日期固定当天楼宇轮廓） */
 function mulberry32(a) {
   return () => {
     a |= 0; a = (a + 0x6d2b79f5) | 0;
@@ -196,13 +196,13 @@ function mulberry32(a) {
   };
 }
 
-// 极客赛博昼夜 5 时段色板
-const CYBER_MOODS = {
-  dawn:   { sky: ['#151b38', '#332e63', '#824372', '#ec9a72'], sun: '#ffe4b5', land: '#0a0f21', glow: 0.50 },
-  day:    { sky: ['#162c52', '#26538d', '#4b86c2', '#93c5fd'], sun: '#fde68a', land: '#0f1b30', glow: 0.40 },
-  golden: { sky: ['#1c2d52', '#495a88', '#b07268', '#f5b370'], sun: '#fff0c2', land: '#141c2e', glow: 0.50 },
-  dusk:   { sky: ['#0c0d29', '#2b1a52', '#7a2b6e', '#df6566'], sun: '#ffaa75', land: '#0b0c20', glow: 0.55 },
-  night:  { sky: ['#040612', '#0a112b', '#181942', '#351b5c'], sun: '#ff9e64', land: '#080b18', glow: 0.52 },
+// 城市江畔昼夜 5 时段色板
+const MOODS = {
+  dawn:   { sky: ['#22304f', '#8a6b8e', '#f2a97e', '#ffd9a8'], sun: '#fff1d6', land: '#2a2a3d', haze: '#f0b996', glow: 0.55 },
+  day:    { sky: ['#3f74b5', '#6f9dd0', '#a9c9e6', '#dbe9f2'], sun: '#fffbf0', land: '#2c3a36', haze: '#bcd3e0', glow: 0.35 },
+  golden: { sky: ['#3d6491', '#8fa7c0', '#f4c27f', '#ffe2a6'], sun: '#fff4dc', land: '#3b2f2a', haze: '#f2c48c', glow: 0.55 },
+  dusk:   { sky: ['#171533', '#4b2f63', '#b4537a', '#f39062'], sun: '#ffd7a8', land: '#1d1526', haze: '#c96a72', glow: 0.55 },
+  night:  { sky: ['#03050c', '#0a1124', '#16244a', '#2b3d6b'], sun: '#e9eefc', land: '#05070d', haze: '#2d406c', glow: 0.55 },
 };
 
 const WEEKDAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
@@ -210,190 +210,182 @@ const moodAt = h => (h >= 5 && h < 7 ? 'dawn' : h >= 7 && h < 16 ? 'day' : h >= 
 const hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
 const mix = (a, b, k) => '#' + hex(a).map((v, i) => Math.round(v + (hex(b)[i] - v) * k).toString(16).padStart(2, '0')).join('');
 
-/** 渲染极客赛博天际线：工作日展示代码矩阵与科技塔阵，周末切换都市桥梁霓虹 */
+/** 渲染武汉城市江畔天际线：两岸高楼、跨江斜拉大桥、电视塔与江面倒影 */
 function horizonSvg(date, h) {
   const dayOfWeek = new Date(`${date}T12:00:00Z`).getUTCDay();
   const dayTag = WEEKDAYS[dayOfWeek];
   const isWeekend = process.env.PROFILE_MODE ? process.env.PROFILE_MODE === 'weekend' : (dayOfWeek === 0 || dayOfWeek === 6);
-  const seed = Number(date.replace(/-/g, '')) + (isWeekend ? 707 : 202);
+  const seed = Number(date.replace(/-/g, '')) + 101;
   const rnd = mulberry32(seed);
   const moodName = moodAt(h);
-  const m = { ...CYBER_MOODS[moodName] };
+  const m = MOODS[moodName];
   const isLit = moodName === 'night' || moodName === 'dusk';
-  const HW = 860, HH = 170, HY = 112;
+  const HW = 860, HH = 170;
   const r1 = n => n.toFixed(1);
 
-  // 工作日夜间偏冷极客蓝白光球，周末夜间保留暖橙赛博落日感
-  if (moodName === 'night' && !isWeekend) m.sun = '#cbd5e1';
-
-  // 日月弧线定位
+  // 日月弧线定位：06:00-18:00 太阳弧行，19:30-05:00 月亮巡游
   let sunX, sunY, sunR;
   if (moodName === 'night') {
     const t = ((h - 19.5 + 24) % 24) / 9.5;
     sunX = HW * (0.08 + 0.84 * t);
     sunY = 54 - Math.sin(Math.PI * t) * 28;
-    sunR = 13;
+    sunR = 11;
   } else {
     const t = (h - 6) / 12;
     sunX = HW * (0.08 + 0.84 * Math.min(1, Math.max(0, t)));
     sunY = 102 - Math.sin(Math.PI * t) * 76;
-    sunR = moodName === 'day' ? 18 : 22;
+    sunR = moodName === 'day' ? 16 : 20;
   }
 
-  // 天空层次：夜间闪烁星空 + 流星；工作日叠加极客节点星图，周末白天加掠过飞鸟
-  let skyExtras = '';
+  // 天空层：夜间与黄昏显示星空和流星，白天显示飞鸟
+  let bgExtras = '';
   if (isLit) {
-    const starCount = isWeekend ? 70 : 48;
+    const starCount = isWeekend ? 72 : 56;
     for (let i = 0; i < starCount; i++) {
-      const x = rnd() * HW, y = rnd() * 94, r = 0.4 + rnd() * 0.9, o = 0.32 + rnd() * 0.6;
-      const tw = rnd() < 0.42 ? `<animate attributeName="opacity" values="${o.toFixed(2)};0.12;${o.toFixed(2)}" dur="${r1(2 + rnd() * 4)}s" begin="-${r1(rnd() * 6)}s" repeatCount="indefinite"/>` : '';
-      skyExtras += `<circle cx="${r1(x)}" cy="${r1(y)}" r="${r.toFixed(2)}" fill="#fff" opacity="${o.toFixed(2)}">${tw}</circle>`;
+      const x = rnd() * HW, y = rnd() * 96, r = 0.4 + rnd() * 0.9, o = 0.35 + rnd() * 0.6;
+      const tw = rnd() < 0.42
+        ? `<animate attributeName="opacity" values="${o.toFixed(2)};0.12;${o.toFixed(2)}" dur="${r1(2 + rnd() * 4)}s" begin="-${r1(rnd() * 6)}s" repeatCount="indefinite"/>`
+        : '';
+      bgExtras += `<circle cx="${r1(x)}" cy="${r1(y)}" r="${r.toFixed(2)}" fill="#fff" opacity="${o.toFixed(2)}">${tw}</circle>`;
     }
-    if (isWeekend && moodName === 'night') {
-      const sx = HW * (0.22 + rnd() * 0.48), sy = 14 + rnd() * 22;
-      skyExtras += `<g opacity="0"><line x1="${r1(sx)}" y1="${r1(sy)}" x2="${r1(sx - 46)}" y2="${r1(sy - 14)}" stroke="url(#trail)" stroke-width="1.3" stroke-linecap="round"/>
-<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.76;0.79;0.85;1" dur="14s" repeatCount="indefinite"/>
-<animateTransform attributeName="transform" type="translate" values="0 0;0 0;150 44;150 44" keyTimes="0;0.76;0.85;1" dur="14s" repeatCount="indefinite"/></g>`;
-    }
-  } else if (isWeekend) {
-    const n = 3 + Math.floor(rnd() * 2), by = 24 + rnd() * 24, cross = 72 + rnd() * 30, phase = rnd() * cross;
-    for (let i = 0; i < n; i++) {
-      const ox = (rnd() - 0.5) * 60, oy = (rnd() - 0.5) * 18, s = 3 + rnd() * 2, flap = 0.7 + rnd() * 0.4;
-      const up = `M${r1(-s)} ${r1(-s * 0.6)} Q${r1(-s * 0.4)} ${r1(-s)} 0 0 Q${r1(s * 0.4)} ${r1(-s)} ${r1(s)} ${r1(-s * 0.6)}`;
-      const down = `M${r1(-s)} ${r1(s * 0.3)} Q${r1(-s * 0.4)} ${r1(-s * 0.2)} 0 0 Q${r1(s * 0.4)} ${r1(-s * 0.2)} ${r1(s)} ${r1(s * 0.3)}`;
-      skyExtras += `<g><animateTransform attributeName="transform" type="translate" values="${r1(-60 + ox)} ${r1(by + oy)};${r1(HW + 60 + ox)} ${r1(by + oy - 10)}" dur="${r1(cross)}s" begin="-${r1(phase)}s" repeatCount="indefinite"/>
-<path d="${up}" fill="none" stroke="#dbeafe" stroke-opacity="0.55" stroke-width="1.1" stroke-linecap="round"><animate attributeName="d" values="${up};${down};${up}" dur="${flap.toFixed(2)}s" begin="-${r1(rnd())}s" repeatCount="indefinite"/></path></g>`;
-    }
-  }
-
-  // 工作日附加极客节点拓扑与微弱代码符号
-  if (!isWeekend) {
-    const nodes = Array.from({ length: 10 }, (_, i) => [60 + i * 82 + (rnd() - 0.5) * 28, 18 + rnd() * 52]);
-    for (let i = 0; i < nodes.length - 1; i++) {
-      if (rnd() < 0.7) {
-        skyExtras += `<line x1="${r1(nodes[i][0])}" y1="${r1(nodes[i][1])}" x2="${r1(nodes[i + 1][0])}" y2="${r1(nodes[i + 1][1])}" stroke="#7dd3fc" stroke-width="0.65" opacity="${isLit ? 0.22 : 0.16}"/>`;
-      }
-    }
-    const tokens = ['</>', '{ }', '=>', 'git', '0x1'];
-    nodes.forEach(([nx, ny], i) => {
-      const col = i % 2 === 0 ? '#7ee787' : '#79c0ff';
-      skyExtras += `<circle cx="${r1(nx)}" cy="${r1(ny)}" r="1.6" fill="${col}" opacity="${isLit ? 0.6 : 0.45}"/>`;
-      if (i % 2 === 1) {
-        skyExtras += `<text x="${r1(nx + 5)}" y="${r1(ny + 3)}" font-family="${FONT}" font-size="8.5" fill="#ffffff" fill-opacity="${isLit ? 0.22 : 0.18}">${esc(tokens[((i - 1) / 2) % tokens.length])}</text>`;
-      }
-    });
-  }
-
-  // 赛博条纹分切光球（clipPath 裁切，避免背景色块接缝）
-  const orb = `<circle cx="${r1(sunX)}" cy="${r1(sunY)}" r="${sunR}" fill="${m.sun}" opacity="0.94" clip-path="url(#orbClip)"/>`;
-
-  // 中景剪影：工作日为科技服务器塔阵，周末为武汉跨江大桥 + 城市夜景剪影
-  const neon = isWeekend ? (isLit ? '#c084fc' : '#93c5fd') : (isLit ? '#38bdf8' : '#7dd3fc');
-  const accent = isWeekend ? (isLit ? '#fb923c' : '#f59e0b') : '#7ee787';
-  let skyline = '';
-
-  if (!isWeekend) {
-    let bx = 0;
-    while (bx < HW) {
-      const w = 14 + rnd() * 26, bh = 10 + rnd() * 32, topY = HY - bh;
-      skyline += `<rect x="${r1(bx)}" y="${r1(topY)}" width="${r1(w)}" height="${r1(bh)}" fill="${m.land}" opacity="0.94"/>`;
-      if (rnd() < 0.28) {
-        const ax = bx + w / 2;
-        skyline += `<line x1="${r1(ax)}" y1="${r1(topY)}" x2="${r1(ax)}" y2="${r1(topY - 12)}" stroke="${neon}" stroke-width="0.9" opacity="0.58"/>`;
-        if (isLit) {
-          skyline += `<circle cx="${r1(ax)}" cy="${r1(topY - 12)}" r="1.4" fill="${accent}"><animate attributeName="opacity" values="1;0.2;1" dur="${r1(1.8 + rnd())}s" repeatCount="indefinite"/></circle>`;
-        }
-      }
-      if (isLit && bh > 22 && rnd() < 0.55) {
-        skyline += `<rect x="${r1(bx + 3)}" y="${r1(topY + 4)}" width="${r1(Math.max(4, w - 6))}" height="1.8" fill="${neon}" opacity="0.42"/>`;
-      }
-      bx += w + 4 + rnd() * 12;
+    if (moodName === 'night') {
+      const sx = HW * (0.35 + rnd() * 0.38), sy = 14 + rnd() * 22;
+      bgExtras += `<g opacity="0"><line x1="${r1(sx)}" y1="${r1(sy)}" x2="${r1(sx - 44)}" y2="${r1(sy - 13)}" stroke="url(#trail)" stroke-width="1.3" stroke-linecap="round"/><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.78;0.8;0.86;1" dur="14s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;0 0;140 42;140 42" keyTimes="0;0.78;0.86;1" dur="14s" repeatCount="indefinite"/></g>`;
     }
   } else {
-    // 周末模式：两岸都市剪影 + 中间跨江斜拉桥（x = 240..500）
-    const bridgeColor = mix(m.land, neon, isLit ? 0.24 : 0.14);
-    const drawUrban = (startX, endX) => {
-      let bx = startX;
-      while (bx < endX) {
-        const w = Math.min(endX - bx, 16 + rnd() * 24);
-        if (w < 12) break;
-        const bh = 14 + rnd() * 34, topY = HY - bh;
-        skyline += `<rect x="${r1(bx)}" y="${r1(topY)}" width="${r1(w)}" height="${r1(bh)}" fill="${m.land}" opacity="0.95"/>`;
-        if (isLit) {
-          const cols = Math.floor((w - 5) / 4.5), rows = Math.floor((bh - 6) / 5.5);
-          for (let r = 0; r < rows; r++) {
-            for (let c = 0; c < cols; c++) {
-              if (rnd() < 0.28) {
-                skyline += `<rect x="${r1(bx + 3 + c * 4.5)}" y="${r1(topY + 4 + r * 5.5)}" width="2" height="2.6" fill="${rnd() < 0.65 ? '#fde68a' : '#c084fc'}" opacity="0.72"/>`;
-              }
+    const n = 3 + Math.floor(rnd() * 3), by = 24 + rnd() * 26, cross = 70 + rnd() * 36, phase = rnd() * cross;
+    const ink = mix(m.land, m.sky[1], 0.28);
+    for (let i = 0; i < n; i++) {
+      const ox = (rnd() - 0.5) * 68, oy = (rnd() - 0.5) * 18, s = 3 + rnd() * 2.2, flap = 0.7 + rnd() * 0.45;
+      const up = `M${r1(-s)} ${r1(-s * 0.6)} Q${r1(-s * 0.4)} ${r1(-s)} 0 0 Q${r1(s * 0.4)} ${r1(-s)} ${r1(s)} ${r1(-s * 0.6)}`;
+      const down = `M${r1(-s)} ${r1(s * 0.3)} Q${r1(-s * 0.4)} ${r1(-s * 0.2)} 0 0 Q${r1(s * 0.4)} ${r1(-s * 0.2)} ${r1(s)} ${r1(s * 0.3)}`;
+      bgExtras += `<g><animateTransform attributeName="transform" type="translate" values="${r1(-60 + ox)} ${r1(by + oy)};${r1(HW + 60 + ox)} ${r1(by + oy - 10)}" dur="${r1(cross)}s" begin="-${r1(phase)}s" repeatCount="indefinite"/>
+<path d="${up}" fill="none" stroke="${ink}" stroke-width="1.1" stroke-linecap="round"><animate attributeName="d" values="${up};${down};${up}" dur="${flap.toFixed(2)}s" begin="-${r1(rnd())}s" repeatCount="indefinite"/></path></g>`;
+    }
+  }
+
+  // 远景薄雾楼群（江心桥跨区保持低矮开阔，突出斜拉桥轮廓）
+  let farBldgs = '';
+  let x = 0;
+  const farColor = mix(m.haze, m.land, 0.36);
+  while (x < HW) {
+    const inSpan = x > 210 && x < 510;
+    const bw = 18 + rnd() * 26;
+    const bh = inSpan ? (10 + rnd() * 18) : (26 + rnd() * 44);
+    farBldgs += `<rect x="${r1(x)}" y="${r1(142 - bh)}" width="${r1(bw + 1)}" height="${r1(bh)}" fill="${farColor}"/>`;
+    x += bw + rnd() * 4;
+  }
+
+  // 跨江斜拉桥（主跨位于 x=210..510 开阔江面；工作日桥面车流更密集，周末悠闲）
+  const bridgeY = 124, t1 = 278, t2 = 448, towerTop = 50;
+  const bridgeColor = mix(m.haze, m.land, 0.68);
+  const cableColor = isLit ? mix(bridgeColor, '#93c5fd', 0.25) : bridgeColor;
+  let bridge = `<rect x="0" y="${bridgeY}" width="${HW}" height="3" fill="${bridgeColor}"/>`;
+  for (const tx of [t1, t2]) {
+    bridge += `<polygon points="${tx - 6},${bridgeY + 20} ${tx - 2.3},${towerTop} ${tx + 2.3},${towerTop} ${tx + 6},${bridgeY + 20}" fill="${bridgeColor}"/>`;
+    bridge += `<rect x="${tx - 4.5}" y="${towerTop + 26}" width="9" height="3" fill="${bridgeColor}"/>`;
+    for (let k = 1; k <= 7; k++) {
+      const span = k * 14.5;
+      bridge += `<line x1="${tx}" y1="${towerTop + 5}" x2="${tx - span}" y2="${bridgeY}" stroke="${cableColor}" stroke-width="0.75" opacity="0.82"/>`;
+      bridge += `<line x1="${tx}" y1="${towerTop + 5}" x2="${tx + span}" y2="${bridgeY}" stroke="${cableColor}" stroke-width="0.75" opacity="0.82"/>`;
+    }
+    if (isLit) {
+      bridge += `<circle cx="${tx}" cy="${towerTop - 1}" r="1.7" fill="#ff5f57"><animate attributeName="opacity" values="1;0.15;1" dur="2.2s" repeatCount="indefinite"/></circle>`;
+    }
+  }
+  if (isLit) {
+    const durA = isWeekend ? '15s' : '9.5s';
+    const durB = isWeekend ? '18s' : '11.5s';
+    bridge += `<circle r="1.5" cy="${bridgeY - 1.2}" fill="#ffd480" opacity="0.9"><animate attributeName="cx" values="-20;${HW + 20}" dur="${durA}" repeatCount="indefinite"/></circle>`;
+    bridge += `<circle r="1.5" cy="${bridgeY - 1.2}" fill="#ff7b72" opacity="0.85"><animate attributeName="cx" values="${HW + 20};-20" dur="${durB}" repeatCount="indefinite"/></circle>`;
+    if (!isWeekend) {
+      bridge += `<circle r="1.3" cy="${bridgeY - 1.2}" fill="#ffd480" opacity="0.78"><animate attributeName="cx" values="-20;${HW + 20}" dur="12.5s" begin="-5s" repeatCount="indefinite"/></circle>`;
+    }
+  }
+
+  // 两岸前景摩天大楼群 + 夜景窗格（工作日写字楼青白灯光略多，周末偏暖金灯光）
+  const nearColor = mix(m.haze, m.land, 0.88);
+  let nearBldgs = '', windows = '', beacons = '';
+  const litRatio = isWeekend ? 0.26 : 0.34;
+  const warmRatio = isWeekend ? 0.82 : 0.62;
+  const drawBank = (startX, endX) => {
+    let bx = startX;
+    while (bx < endX) {
+      const bw = Math.min(endX - bx, 20 + rnd() * 30);
+      if (bw < 14) break;
+      const bh = 28 + rnd() * 72, topY = 144 - bh;
+      const isSpire = rnd() < 0.25 && bh > 58;
+      nearBldgs += `<rect x="${r1(bx)}" y="${r1(topY)}" width="${r1(bw)}" height="${r1(bh)}" fill="${nearColor}"/>`;
+      if (isSpire) {
+        const sx = bx + bw / 2;
+        nearBldgs += `<rect x="${r1(bx + bw * 0.22)}" y="${r1(topY - 8)}" width="${r1(bw * 0.56)}" height="8" fill="${nearColor}"/>`;
+        nearBldgs += `<line x1="${r1(sx)}" y1="${r1(topY - 8)}" x2="${r1(sx)}" y2="${r1(topY - 22)}" stroke="${nearColor}" stroke-width="1.4"/>`;
+        if (isLit) beacons += `<circle cx="${r1(sx)}" cy="${r1(topY - 22)}" r="1.5" fill="#ff5f57"><animate attributeName="opacity" values="1;0.1;1" dur="${r1(1.8 + rnd())}s" begin="-${r1(rnd() * 2)}s" repeatCount="indefinite"/></circle>`;
+      }
+      if (isLit) {
+        const cols = Math.floor((bw - 6) / 5), rows = Math.floor((bh - 8) / 6);
+        for (let r = 0; r < rows; r++) {
+          for (let c = 0; c < cols; c++) {
+            if (rnd() < litRatio) {
+              const wc = rnd() < warmRatio ? '#ffd480' : '#8be9fd';
+              windows += `<rect x="${r1(bx + 4 + c * 5)}" y="${r1(topY + 5 + r * 6)}" width="2.4" height="3.2" fill="${wc}" opacity="${(0.35 + rnd() * 0.55).toFixed(2)}"/>`;
             }
           }
         }
-        bx += w + 3 + rnd() * 7;
       }
-    };
-    drawUrban(4, 235);
-    drawUrban(505, HW - 4);
-    skyline += `<rect x="235" y="${HY - 4}" width="270" height="4" fill="${bridgeColor}"/>`;
-    for (const tx of [305, 435]) {
-      const top = HY - 44;
-      skyline += `<polygon points="${tx - 4},${HY} ${tx - 1.6},${top} ${tx + 1.6},${top} ${tx + 4},${HY}" fill="${bridgeColor}"/>`;
-      for (let k = 1; k <= 5; k++) {
-        const span = k * 12.5;
-        skyline += `<line x1="${tx}" y1="${top + 4}" x2="${tx - span}" y2="${HY - 3}" stroke="${neon}" stroke-width="0.65" opacity="0.52"/>`;
-        skyline += `<line x1="${tx}" y1="${top + 4}" x2="${tx + span}" y2="${HY - 3}" stroke="${neon}" stroke-width="0.65" opacity="0.52"/>`;
-      }
-      if (isLit) {
-        skyline += `<circle cx="${tx}" cy="${top - 1}" r="1.5" fill="#ff5f57"><animate attributeName="opacity" values="1;0.15;1" dur="2.1s" repeatCount="indefinite"/></circle>`;
-      }
+      bx += bw + 3 + rnd() * 7;
     }
-    if (isLit) {
-      skyline += `<circle r="1.3" cy="${HY - 5}" fill="${accent}" opacity="0.9"><animate attributeName="cx" values="235;505" dur="6.5s" repeatCount="indefinite"/></circle>`;
-    }
-  }
+  };
+  drawBank(6, 205);
+  drawBank(515, HW - 6);
 
-  // 前景 3D 透视赛博网格 + 飞驰脉冲光点
-  let grid = `<rect x="0" y="${HY}" width="${HW}" height="${HH - HY}" fill="${m.land}"/>`;
-  grid += `<line x1="0" y1="${HY}" x2="${HW}" y2="${HY}" stroke="${neon}" stroke-width="1.4" opacity="0.88"/>`;
-  const vpX = HW / 2;
-  for (let i = -12; i <= 12; i++) {
-    grid += `<line x1="${r1(vpX + i * 26)}" y1="${HY}" x2="${r1(vpX + i * 95)}" y2="${HH}" stroke="${neon}" stroke-width="0.7" opacity="0.30"/>`;
+  // 电视塔地标（右岸点缀）
+  const tvX = 635;
+  nearBldgs += `<polygon points="${tvX - 6},144 ${tvX - 2},72 ${tvX + 2},72 ${tvX + 6},144" fill="${nearColor}"/>`;
+  nearBldgs += `<ellipse cx="${tvX}" cy="70" rx="8" ry="4" fill="${nearColor}"/>`;
+  nearBldgs += `<line x1="${tvX}" y1="66" x2="${tvX}" y2="42" stroke="${nearColor}" stroke-width="1.5"/>`;
+  if (isLit) beacons += `<circle cx="${tvX}" cy="42" r="1.6" fill="#ff5f57"><animate attributeName="opacity" values="1;0.1;1" dur="1.9s" repeatCount="indefinite"/></circle>`;
+
+  // 江面区域 + 日月倒影（周末附加缓缓驶过的江轮微光）
+  const waterTop = 144;
+  const waterCol = mix(m.land, m.sky[2], 0.30);
+  let water = `<rect x="0" y="${waterTop}" width="${HW}" height="${HH - waterTop}" fill="${waterCol}"/>`;
+  for (let i = 0; i < 18; i++) {
+    const ry = waterTop + 3 + i * 1.4;
+    const rw = Math.max(8, (64 - i * 2.5) * (0.6 + rnd() * 0.6));
+    const rx = sunX - rw / 2 + (rnd() - 0.5) * 16;
+    water += `<rect x="${r1(rx)}" y="${r1(ry)}" width="${r1(rw)}" height="0.9" rx="0.4" fill="${m.sun}" opacity="${(0.32 - i * 0.014).toFixed(2)}"><animate attributeName="x" values="${r1(rx - 4)};${r1(rx + 4)};${r1(rx - 4)}" dur="${r1(3 + rnd() * 3)}s" repeatCount="indefinite"/></rect>`;
   }
-  for (let k = 0; k < 6; k++) {
-    const t = Math.pow(k / 5, 1.85);
-    const y = HY + 3 + t * (HH - HY - 6);
-    grid += `<line x1="0" y1="${r1(y)}" x2="${HW}" y2="${r1(y)}" stroke="${neon}" stroke-width="0.75" opacity="${(0.22 + t * 0.45).toFixed(2)}"/>`;
+  if (isWeekend) {
+    const boatCol = mix(nearColor, '#ffffff', isLit ? 0.18 : 0.1);
+    const boatLit = isLit ? `<rect x="3" y="1.5" width="12" height="1.5" fill="#ffd480" opacity="0.85"/><circle cx="17" cy="3" r="1.1" fill="#8be9fd"/>` : '';
+    water += `<g opacity="0.85"><animateTransform attributeName="transform" type="translate" values="405 148;575 148" dur="36s" repeatCount="indefinite"/>
+      <polygon points="0,5 20,5 23,2 2,2" fill="${boatCol}"/><rect x="4" y="0" width="11" height="2.2" fill="${boatCol}"/>${boatLit}
+    </g>`;
   }
-  grid += `<circle r="2.2" fill="${accent}"><animate attributeName="cx" values="${vpX - 28};${vpX - 185}" dur="3.4s" repeatCount="indefinite"/><animate attributeName="cy" values="${HY};${HH}" dur="3.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;1;0" dur="3.4s" repeatCount="indefinite"/></circle>`;
-  grid += `<circle r="2.2" fill="${neon}"><animate attributeName="cx" values="${vpX + 38};${vpX + 235}" dur="4.1s" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="cy" values="${HY};${HH}" dur="4.1s" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;1;0" dur="4.1s" begin="-1.5s" repeatCount="indefinite"/></circle>`;
 
   const timeLabel = `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`;
-  const modeLabel = isWeekend ? 'cyber-chill' : 'cyber-work';
-  const label = `${date} (${dayTag}) · ${timeLabel} utc+${tzOffsetHours} · ${modeLabel} · ${moodName}`;
-  const orbTop = sunY - sunR - 2;
-
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${HW}" height="${HH}" viewBox="0 0 ${HW} ${HH}" role="img" aria-label="cyber horizon in ${cfg.location || 'Wuhan'}: ${modeLabel}, ${moodName}">
+  const modeLabel = isWeekend ? 'weekend' : 'workday';
+  const label = `${date} (${dayTag}) · ${timeLabel} utc+${tzOffsetHours} · ${(cfg.location || 'wuhan').toLowerCase()} · ${modeLabel} · ${moodName}`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${HW}" height="${HH}" viewBox="0 0 ${HW} ${HH}" role="img" aria-label="the riverfront skyline right now in ${cfg.location || 'Wuhan'}: ${modeLabel}, ${moodName}">
 <defs>
-<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">${m.sky.map((s, i) => `<stop offset="${(i / 3) * 0.8}" stop-color="${s}"/>`).join('')}</linearGradient>
-<radialGradient id="glow" cx="${r1(sunX)}" cy="${r1(sunY)}" r="${sunR * 6.5}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${m.sun}" stop-opacity="${m.glow}"/><stop offset="1" stop-color="${m.sun}" stop-opacity="0"/></radialGradient>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">${m.sky.map((s, i) => `<stop offset="${(i / 3) * 0.78}" stop-color="${s}"/>`).join('')}</linearGradient>
+<radialGradient id="glow" cx="${r1(sunX)}" cy="${r1(sunY)}" r="${sunR * 7}" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="${m.sun}" stop-opacity="${m.glow}"/><stop offset="1" stop-color="${m.sun}" stop-opacity="0"/></radialGradient>
 <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-<clipPath id="orbClip">
-  <rect x="${r1(sunX - sunR - 2)}" y="${r1(orbTop)}" width="${(sunR + 2) * 2}" height="${r1(sunR + 5)}"/>
-  <rect x="${r1(sunX - sunR - 2)}" y="${r1(sunY + 5)}" width="${(sunR + 2) * 2}" height="2.4"/>
-  <rect x="${r1(sunX - sunR - 2)}" y="${r1(sunY + 9.2)}" width="${(sunR + 2) * 2}" height="2.1"/>
-  <rect x="${r1(sunX - sunR - 2)}" y="${r1(sunY + 13.2)}" width="${(sunR + 2) * 2}" height="1.8"/>
-  <rect x="${r1(sunX - sunR - 2)}" y="${r1(sunY + 17)}" width="${(sunR + 2) * 2}" height="4"/>
-</clipPath>
 <clipPath id="frame"><rect width="${HW}" height="${HH}" rx="12"/></clipPath>
 </defs>
 <g clip-path="url(#frame)">
 <rect width="${HW}" height="${HH}" fill="url(#sky)"/>
-<rect width="${HW}" height="${HH}" fill="url(#glow)"><animate attributeName="opacity" values="0.82;1;0.82" dur="8s" repeatCount="indefinite"/></rect>
-${orb}
-${skyExtras}
-${skyline}
-${grid}
-<text x="16" y="${HH - 10}" font-family="${FONT}" font-size="10.5" fill="#fff" fill-opacity="0.62">${label}</text>
+${bgExtras}
+<rect width="${HW}" height="${HH}" fill="url(#glow)"><animate attributeName="opacity" values="0.8;1;0.8" dur="8s" repeatCount="indefinite"/></rect>
+<circle cx="${r1(sunX)}" cy="${r1(sunY)}" r="${r1(sunR)}" fill="${m.sun}"/>
+${farBldgs}
+${bridge}
+${nearBldgs}
+${windows}
+${beacons}
+${water}
+<text x="16" y="${HH - 11}" font-family="${FONT}" font-size="10.5" fill="#fff" fill-opacity="0.6">${label}</text>
 </g>
 </svg>
 `;
